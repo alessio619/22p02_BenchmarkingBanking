@@ -1,0 +1,973 @@
+var_type,format,voice_type_desc,voice_type_desc.1,voice,group,cost
+valore,sportello,base,base,Canone,giovani,24
+valore,sportello,base,base,Nowbanking Privati,giovani,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,giovani,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,giovani,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,giovani,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,giovani,6
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,giovani,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,giovani,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,0
+valore,sportello,total,total,Totale,giovani,
+numero_operazioni,sportello,base,base,Canone,giovani,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,giovani,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,10
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,22
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,5
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,7
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,giovani,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,33
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,5
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,2
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,36
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,giovani,0
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,giovani,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,giovani,1
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,5
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,2
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,6
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,2
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,0
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,0
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,giovani,6
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,2
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,giovani,7
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,4
+numero_operazioni,sportello,total,total,Totale,giovani,164
+isc,sportello,base,base,Canone,giovani,24
+isc,sportello,base,base,Nowbanking Privati,giovani,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,3.52
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,5
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,giovani,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,giovani,0
+isc,sportello,carta di credito,carta di credito,invio estratto conto,giovani,0
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,giovani,6
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,5
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,0.7
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,0
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,giovani,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,7
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,giovani,3.5
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,0
+isc,sportello,total,total,Totale,giovani,58.97
+valore,online,base,base,Canone,giovani,24
+valore,online,base,base,Nowbanking Privati,giovani,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,giovani,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,0
+valore,online,carta di credito,carta di credito,Carta di credito,giovani,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,giovani,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,giovani,6
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,giovani,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,giovani,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,0
+valore,online,total,total,Totale,giovani,
+numero_operazioni,online,base,base,Canone,giovani,1
+numero_operazioni,online,base,base,Nowbanking Privati,giovani,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,32
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,7
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,giovani,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,38
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,5
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,2
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,36
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,giovani,0
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,giovani,0
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,giovani,1
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,5
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,2
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,6
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,2
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,0
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,0
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,giovani,6
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,giovani,9
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,4
+numero_operazioni,online,total,total,Totale,giovani,164
+isc,online,base,base,Canone,giovani,24
+isc,online,base,base,Nowbanking Privati,giovani,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,giovani,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,giovani,5.12
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,giovani,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,giovani,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,giovani,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,giovani,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,giovani,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,giovani,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,giovani,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,giovani,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,giovani,0
+isc,online,carta di credito,carta di credito,Carta di credito,giovani,0
+isc,online,carta di credito,carta di credito,invio estratto conto,giovani,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,giovani,6
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,giovani,2.5
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,giovani,0.7
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,giovani,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,giovani,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,giovani,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,giovani,0
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,giovani,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,giovani,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,giovani,4.5
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,giovani,0
+isc,online,total,total,Totale,giovani,42.82
+valore,sportello,base,base,Canone,famiglie_bassa,0
+valore,sportello,base,base,Nowbanking Privati,famiglie_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,famiglie_bassa,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,12
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,0
+valore,sportello,total,total,Totale,famiglie_bassa,
+numero_operazioni,sportello,base,base,Canone,famiglie_bassa,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,famiglie_bassa,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,7
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,17
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,7
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,9
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,36
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,4
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,1
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,46
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,famiglie_bassa,0
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,0
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,7
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,12
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,4
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,12
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,12
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,12
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,3
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,1
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,2
+numero_operazioni,sportello,total,total,Totale,famiglie_bassa,201
+isc,sportello,base,base,Canone,famiglie_bassa,0
+isc,sportello,base,base,Nowbanking Privati,famiglie_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,2.72
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,7
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,famiglie_bassa,0
+isc,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,0
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,0
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,2.45
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,18
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,18
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,10.5
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,0.5
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,0
+isc,sportello,total,total,Totale,famiglie_bassa,63.42
+valore,online,base,base,Canone,famiglie_bassa,0
+valore,online,base,base,Nowbanking Privati,famiglie_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,0
+valore,online,carta di credito,carta di credito,Carta di credito,famiglie_bassa,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,12
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,0
+valore,online,total,total,Totale,famiglie_bassa,
+numero_operazioni,online,base,base,Canone,famiglie_bassa,1
+numero_operazioni,online,base,base,Nowbanking Privati,famiglie_bassa,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,24
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,9
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,43
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,4
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,1
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,46
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,famiglie_bassa,0
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,0
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,0
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,0
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,7
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,12
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,4
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,12
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,12
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,12
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,4
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,2
+numero_operazioni,online,total,total,Totale,famiglie_bassa,201
+isc,online,base,base,Canone,famiglie_bassa,0
+isc,online,base,base,Nowbanking Privati,famiglie_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_bassa,3.84
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_bassa,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,famiglie_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_bassa,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_bassa,0
+isc,online,carta di credito,carta di credito,Carta di credito,famiglie_bassa,0
+isc,online,carta di credito,carta di credito,invio estratto conto,famiglie_bassa,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_bassa,0
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_bassa,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_bassa,2.45
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_bassa,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_bassa,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_bassa,18
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_bassa,18
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_bassa,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_bassa,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_bassa,2
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_bassa,0
+isc,online,total,total,Totale,famiglie_bassa,44.29
+valore,sportello,base,base,Canone,famiglie_media,0
+valore,sportello,base,base,Nowbanking Privati,famiglie_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_media,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,famiglie_media,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_media,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,12
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,0
+valore,sportello,total,total,Totale,famiglie_media,
+numero_operazioni,sportello,base,base,Canone,famiglie_media,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,famiglie_media,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,5
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,21
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,5
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,10
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_media,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,37
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,7
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,2
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,54
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,famiglie_media,1
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_media,12
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,0
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,9
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,18
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,2
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,12
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,0
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,12
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,4
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,4
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,4
+numero_operazioni,sportello,total,total,Totale,famiglie_media,228
+isc,sportello,base,base,Canone,famiglie_media,0
+isc,sportello,base,base,Nowbanking Privati,famiglie_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,3.36
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,5
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,famiglie_media,30.99
+isc,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_media,13.8
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,0
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,3.15
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,18
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,0
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,14
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,2
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,0
+isc,sportello,total,total,Totale,famiglie_media,94.55
+valore,online,base,base,Canone,famiglie_media,0
+valore,online,base,base,Nowbanking Privati,famiglie_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,famiglie_media,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,0
+valore,online,carta di credito,carta di credito,Carta di credito,famiglie_media,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,famiglie_media,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,12
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,0
+valore,online,total,total,Totale,famiglie_media,
+numero_operazioni,online,base,base,Canone,famiglie_media,1
+numero_operazioni,online,base,base,Nowbanking Privati,famiglie_media,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,26
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,10
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,famiglie_media,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,42
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,7
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,2
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,54
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,famiglie_media,1
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,famiglie_media,12
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,0
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,0
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,9
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,18
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,2
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,12
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,0
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,12
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,8
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,4
+numero_operazioni,online,total,total,Totale,famiglie_media,228
+isc,online,base,base,Canone,famiglie_media,0
+isc,online,base,base,Nowbanking Privati,famiglie_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_media,4.16
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_media,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,famiglie_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_media,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_media,0
+isc,online,carta di credito,carta di credito,Carta di credito,famiglie_media,30.99
+isc,online,carta di credito,carta di credito,invio estratto conto,famiglie_media,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_media,0
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_media,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_media,3.15
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_media,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_media,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_media,18
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_media,0
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_media,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_media,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_media,4
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_media,0
+isc,online,total,total,Totale,famiglie_media,60.3
+valore,sportello,base,base,Canone,famiglie_alta,0
+valore,sportello,base,base,Nowbanking Privati,famiglie_alta,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,famiglie_alta,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_alta,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,12
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,0
+valore,sportello,total,total,Totale,famiglie_alta,
+numero_operazioni,sportello,base,base,Canone,famiglie_alta,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,famiglie_alta,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,6
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,35
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,6
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,10
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,38
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,5
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,2
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,52
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,famiglie_alta,1
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_alta,12
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,0
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,11
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,24
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,2
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,12
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,0
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,12
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,5
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,5
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,6
+numero_operazioni,sportello,total,total,Totale,famiglie_alta,253
+isc,sportello,base,base,Canone,famiglie_alta,0
+isc,sportello,base,base,Nowbanking Privati,famiglie_alta,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,5.6
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,6
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,famiglie_alta,30.99
+isc,sportello,carta di credito,carta di credito,invio estratto conto,famiglie_alta,13.8
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,0
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,3.85
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,18
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,0
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,17.5
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,2.5
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,0
+isc,sportello,total,total,Totale,famiglie_alta,102.49
+valore,online,base,base,Canone,famiglie_alta,0
+valore,online,base,base,Nowbanking Privati,famiglie_alta,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,0
+valore,online,carta di credito,carta di credito,Carta di credito,famiglie_alta,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,famiglie_alta,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,12
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,0
+valore,online,total,total,Totale,famiglie_alta,
+numero_operazioni,online,base,base,Canone,famiglie_alta,1
+numero_operazioni,online,base,base,Nowbanking Privati,famiglie_alta,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,41
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,10
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,44
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,5
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,2
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,52
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,famiglie_alta,1
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,famiglie_alta,12
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,0
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,0
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,11
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,24
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,2
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,12
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,0
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,12
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,10
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,6
+numero_operazioni,online,total,total,Totale,famiglie_alta,253
+isc,online,base,base,Canone,famiglie_alta,0
+isc,online,base,base,Nowbanking Privati,famiglie_alta,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,famiglie_alta,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,famiglie_alta,6.56
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,famiglie_alta,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,famiglie_alta,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,famiglie_alta,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,famiglie_alta,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,famiglie_alta,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,famiglie_alta,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,famiglie_alta,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,famiglie_alta,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,famiglie_alta,0
+isc,online,carta di credito,carta di credito,Carta di credito,famiglie_alta,30.99
+isc,online,carta di credito,carta di credito,invio estratto conto,famiglie_alta,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,famiglie_alta,0
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,famiglie_alta,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,famiglie_alta,3.85
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,famiglie_alta,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,famiglie_alta,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,famiglie_alta,18
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,famiglie_alta,0
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,famiglie_alta,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,famiglie_alta,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,famiglie_alta,5
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,famiglie_alta,0
+isc,online,total,total,Totale,famiglie_alta,64.4
+valore,sportello,base,base,Canone,pensionati_bassa,48
+valore,sportello,base,base,Nowbanking Privati,pensionati_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,pensionati_bassa,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,12
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,0
+valore,sportello,total,total,Totale,pensionati_bassa,
+numero_operazioni,sportello,base,base,Canone,pensionati_bassa,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,pensionati_bassa,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,5
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,5
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,6
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,6
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,28
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,2
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,1
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,20
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,pensionati_bassa,0
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,0
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,5
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,18
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,2
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,0
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,0
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,12
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,3
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,0
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,2
+numero_operazioni,sportello,total,total,Totale,pensionati_bassa,124
+isc,sportello,base,base,Canone,pensionati_bassa,48
+isc,sportello,base,base,Nowbanking Privati,pensionati_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,0.8
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,6
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,pensionati_bassa,0
+isc,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,0
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,0
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,1.75
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,0
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,10.5
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,0
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,0
+isc,sportello,total,total,Totale,pensionati_bassa,71.3
+valore,online,base,base,Canone,pensionati_bassa,48
+valore,online,base,base,Nowbanking Privati,pensionati_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,0
+valore,online,carta di credito,carta di credito,Carta di credito,pensionati_bassa,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,12
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,0
+valore,online,total,total,Totale,pensionati_bassa,
+numero_operazioni,online,base,base,Canone,pensionati_bassa,1
+numero_operazioni,online,base,base,Nowbanking Privati,pensionati_bassa,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,10
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,6
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,34
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,2
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,1
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,20
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,pensionati_bassa,0
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,0
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,0
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,0
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,5
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,18
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,2
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,0
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,0
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,12
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,3
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,2
+numero_operazioni,online,total,total,Totale,pensionati_bassa,124
+isc,online,base,base,Canone,pensionati_bassa,48
+isc,online,base,base,Nowbanking Privati,pensionati_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_bassa,1.6
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_bassa,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_bassa,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,pensionati_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_bassa,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_bassa,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_bassa,0
+isc,online,carta di credito,carta di credito,Carta di credito,pensionati_bassa,0
+isc,online,carta di credito,carta di credito,invio estratto conto,pensionati_bassa,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_bassa,0
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_bassa,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_bassa,1.75
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_bassa,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_bassa,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_bassa,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_bassa,0
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_bassa,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_bassa,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_bassa,1.5
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_bassa,0
+isc,online,total,total,Totale,pensionati_bassa,52.85
+valore,sportello,base,base,Canone,pensionati_media,24
+valore,sportello,base,base,Nowbanking Privati,pensionati_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,0.16
+valore,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,1
+valore,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,0
+valore,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,0.2125
+valore,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,0.85
+valore,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_media,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,0
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,2.1
+valore,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,2.1
+valore,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,0
+valore,sportello,carta di credito,carta di credito,Carta di credito,pensionati_media,30.99
+valore,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_media,1.15
+valore,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,12
+valore,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,1
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,0.35
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,0
+valore,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,0
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,1.5
+valore,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,1.5
+valore,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,0
+valore,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,3.5
+valore,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,0.5
+valore,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,0
+valore,sportello,total,total,Totale,pensionati_media,
+numero_operazioni,sportello,base,base,Canone,pensionati_media,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,pensionati_media,1
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,7
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,18
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,8
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,6
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,4
+numero_operazioni,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,4
+numero_operazioni,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_media,1
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,34
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,4
+numero_operazioni,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,1
+numero_operazioni,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,32
+numero_operazioni,sportello,carta di credito,carta di credito,Carta di credito,pensionati_media,1
+numero_operazioni,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_media,12
+numero_operazioni,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,0
+numero_operazioni,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,0
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,10
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,24
+numero_operazioni,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,2
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,0
+numero_operazioni,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,0
+numero_operazioni,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,12
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,4
+numero_operazioni,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,2
+numero_operazioni,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,3
+numero_operazioni,sportello,total,total,Totale,pensionati_media,189
+isc,sportello,base,base,Canone,pensionati_media,24
+isc,sportello,base,base,Nowbanking Privati,pensionati_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,2.88
+isc,sportello,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,8
+isc,sportello,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,0
+isc,sportello,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,0.85
+isc,sportello,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,3.4
+isc,sportello,carta di debito,carta di debito,Canone carta di debito,pensionati_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,0
+isc,sportello,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,0
+isc,sportello,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,0
+isc,sportello,carta di credito,carta di credito,Carta di credito,pensionati_media,30.99
+isc,sportello,carta di credito,carta di credito,invio estratto conto,pensionati_media,13.8
+isc,sportello,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,0
+isc,sportello,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,3.5
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,0
+isc,sportello,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,0
+isc,sportello,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,0
+isc,sportello,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,0
+isc,sportello,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,14
+isc,sportello,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,1
+isc,sportello,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,0
+isc,sportello,total,total,Totale,pensionati_media,102.42
+valore,online,base,base,Canone,pensionati_media,24
+valore,online,base,base,Nowbanking Privati,pensionati_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,1
+valore,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,0.16
+valore,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,1
+valore,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,0
+valore,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,0
+valore,online,carta di debito,carta di debito,Canone carta di debito,pensionati_media,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,0
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,2.1
+valore,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,2.1
+valore,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,0
+valore,online,carta di credito,carta di credito,Carta di credito,pensionati_media,30.99
+valore,online,carta di credito,carta di credito,invio estratto conto,pensionati_media,0
+valore,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,12
+valore,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,0.5
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,0.35
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,0
+valore,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,0
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,1.5
+valore,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,1.5
+valore,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,0
+valore,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,3.5
+valore,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,0.5
+valore,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,0
+valore,online,total,total,Totale,pensionati_media,
+numero_operazioni,online,base,base,Canone,pensionati_media,1
+numero_operazioni,online,base,base,Nowbanking Privati,pensionati_media,1
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,25
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,0
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,6
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,4
+numero_operazioni,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,4
+numero_operazioni,online,carta di debito,carta di debito,Canone carta di debito,pensionati_media,1
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,42
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,4
+numero_operazioni,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,1
+numero_operazioni,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,32
+numero_operazioni,online,carta di credito,carta di credito,Carta di credito,pensionati_media,1
+numero_operazioni,online,carta di credito,carta di credito,invio estratto conto,pensionati_media,12
+numero_operazioni,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,0
+numero_operazioni,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,0
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,10
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,24
+numero_operazioni,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,2
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,0
+numero_operazioni,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,0
+numero_operazioni,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,12
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,0
+numero_operazioni,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,6
+numero_operazioni,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,3
+numero_operazioni,online,total,total,Totale,pensionati_media,189
+isc,online,base,base,Canone,pensionati_media,24
+isc,online,base,base,Nowbanking Privati,pensionati_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento allo sportello,pensionati_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Richiesta elenco movimento online,pensionati_media,4
+isc,online,gestione della liquidità,gestione della liquidità,Prelievo contante sportello > 500 €,pensionati_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Versamento in contante e assegni,pensionati_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Comunicazione Trasparenza,pensionati_media,0
+isc,online,gestione della liquidità,gestione della liquidità,Invio estratto conto,pensionati_media,0
+isc,online,carta di debito,carta di debito,Canone carta di debito,pensionati_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM banca del gruppo,pensionati_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altra banca,pensionati_media,0
+isc,online,carta di debito,carta di debito,Prelievo presso ATM altri Paesi UE,pensionati_media,0
+isc,online,operazioni pagamento con carta debito,operazioni pagamento con carta debito,Operazioni,pensionati_media,0
+isc,online,carta di credito,carta di credito,Carta di credito,pensionati_media,30.99
+isc,online,carta di credito,carta di credito,invio estratto conto,pensionati_media,0
+isc,online,carta prepagata,carta prepagata,Carta Prepagata,pensionati_media,0
+isc,online,carta prepagata,carta prepagata,Ricarica carta pregata,pensionati_media,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti con assegni,pensionati_media,3.5
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Domiciliazione utenze,pensionati_media,0
+isc,online,"assegni, utenze, imposte","assegni, utenze, imposte",Pagamenti tasse ed imposte,pensionati_media,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Rata mutuo - addebito in c/c,pensionati_media,0
+isc,online,pagamenti ricorrenti,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,pensionati_media,0
+isc,online,bonifici,bonifici,Accredito stipendio/pensione,pensionati_media,0
+isc,online,bonifici,bonifici,Bonifici vs Italia allo sportello,pensionati_media,0
+isc,online,bonifici,bonifici,Bonifici vs Italia online,pensionati_media,3
+isc,online,bonifici,bonifici,Pagamenti ricevuti tramite bonifico,pensionati_media,0
+isc,online,total,total,Totale,pensionati_media,65.49

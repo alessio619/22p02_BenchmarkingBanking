@@ -1,0 +1,61 @@
+
+===============================================
+===============================================
+
+
+-----------------  LEGENDA  ------------------- 
+
+
+===============================================
+===============================================
+
+
+BANCHE:
+
+isp = Intesa
+uni = Unicredit
+ubi = UBI Banca
+cag = Credit Agricole
+bpm = Banca BPM
+mps = MPS
+bnl = BNL
+bpr = BPER
+cdm = CREDEM
+
+
+
+
+===============================================
+===============================================
+
+
+CONTI CORRENTI:
+
+1 = XME Conto
+2 = XME Conto + servizi aggiuntivi
+1 = My Genius
+2 = My Genius + Silver
+3 = My Genius + Gold
+4 = My Genius + Platinum
+1 = UBIconto
+1 = Easy
+2 = Smart
+3 = Full
+1 = YouWelcome New
+1 = Mio Easy
+2 = Mio Plus
+3 = Mio Extra
+4 = Italiano per noi A
+5 = Italiano per noi B
+6 = MPS One
+1 = SMART
+2 = POWERED
+3 = FULL
+1 = On Demand
+1 = Credem Facile
+
+
+
+
+===============================================
+===============================================

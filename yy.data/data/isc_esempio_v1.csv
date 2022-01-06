@@ -1,0 +1,163 @@
+﻿var_type,format,voice_type_main,voice_type_desc,voice,giovani,famiglie_bassa,famiglie_media,famiglie_alta,pensionati_bassa,pensionati_media
+valore,sportello,base,base,Canone,24,0,0,0,48,24
+valore,sportello,base,base,Nowbanking Privati,0,0,0,0,0,0
+valore,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,0,0,0,0,0,0
+valore,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,0.16,0.16,0.16,0.16,0.16,0.16
+valore,sportello,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,1,1,1,1,1,1
+valore,sportello,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,0,0,0,0,0,0
+valore,sportello,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,0.2125,0.2125,0.2125,0.2125,0.2125,0.2125
+valore,sportello,operativita_corrente,gestione della liquidità,Invio estratto conto,0.85,0.85,0.85,0.85,0.85,0.85
+valore,sportello,servizi_pagamento,carta di debito,Canone carta di debito,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,2.1,2.1,2.1,2.1,2.1,2.1
+valore,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,2.1,2.1,2.1,2.1,2.1,2.1
+valore,sportello,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,carta di credito,Carta di credito,30.99,30.99,30.99,30.99,30.99,30.99
+valore,sportello,servizi_pagamento,carta di credito,invio estratto conto,1.15,1.15,1.15,1.15,1.15,1.15
+valore,sportello,servizi_pagamento,carta prepagata,Carta Prepagata,6,12,12,12,12,12
+valore,sportello,servizi_pagamento,carta prepagata,Ricarica carta pregata,1,1,1,1,1,1
+valore,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,0.35,0.35,0.35,0.35,0.35,0.35
+valore,sportello,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,1.5,1.5,1.5,1.5,1.5,1.5
+valore,sportello,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,1.5,1.5,1.5,1.5,1.5,1.5
+valore,sportello,servizi_pagamento,bonifici,Accredito stipendio/pensione,0,0,0,0,0,0
+valore,sportello,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,3.5,3.5,3.5,3.5,3.5,3.5
+valore,sportello,servizi_pagamento,bonifici,Bonifici vs Italia online,0.5,0.5,0.5,0.5,0.5,0.5
+valore,sportello,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,0,0,0,0,0,0
+valore,sportello,total,total,Totale,,,,,,
+numero_operazioni,sportello,base,base,Canone,1,1,1,1,1,1
+numero_operazioni,sportello,base,base,Nowbanking Privati,1,1,1,1,1,1
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,10,7,5,6,5,7
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,22,17,21,35,5,18
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,5,7,5,6,6,8
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,7,9,10,10,6,6
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,4,4,4,4,4,4
+numero_operazioni,sportello,operativita_corrente,gestione della liquidità,Invio estratto conto,4,4,4,4,4,4
+numero_operazioni,sportello,servizi_pagamento,carta di debito,Canone carta di debito,1,1,1,1,1,1
+numero_operazioni,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,33,36,37,38,28,34
+numero_operazioni,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,5,4,7,5,2,4
+numero_operazioni,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,2,1,2,2,1,1
+numero_operazioni,sportello,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,36,46,54,52,20,32
+numero_operazioni,sportello,servizi_pagamento,carta di credito,Carta di credito,0,0,1,1,0,1
+numero_operazioni,sportello,servizi_pagamento,carta di credito,invio estratto conto,0,0,12,12,0,12
+numero_operazioni,sportello,servizi_pagamento,carta prepagata,Carta Prepagata,1,0,0,0,0,0
+numero_operazioni,sportello,servizi_pagamento,carta prepagata,Ricarica carta pregata,5,0,0,0,0,0
+numero_operazioni,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,2,7,9,11,5,10
+numero_operazioni,sportello,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,6,12,18,24,18,24
+numero_operazioni,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,2,4,2,2,2,2
+numero_operazioni,sportello,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,0,12,12,12,0,0
+numero_operazioni,sportello,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,0,12,0,0,0,0
+numero_operazioni,sportello,servizi_pagamento,bonifici,Accredito stipendio/pensione,6,12,12,12,12,12
+numero_operazioni,sportello,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,2,3,4,5,3,4
+numero_operazioni,sportello,servizi_pagamento,bonifici,Bonifici vs Italia online,7,1,4,5,0,2
+numero_operazioni,sportello,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,4,2,4,6,2,3
+numero_operazioni,sportello,total,total,Totale,164,201,228,253,124,189
+isc,sportello,base,base,Canone,24,0,0,0,48,24
+isc,sportello,base,base,Nowbanking Privati,0,0,0,0,0,0
+isc,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,0,0,0,0,0,0
+isc,sportello,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,3.52,2.72,3.36,5.6,0.8,2.88
+isc,sportello,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,5,7,5,6,6,8
+isc,sportello,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,0,0,0,0,0,0
+isc,sportello,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,0.85,0.85,0.85,0.85,0.85,0.85
+isc,sportello,operativita_corrente,gestione della liquidità,Invio estratto conto,3.4,3.4,3.4,3.4,3.4,3.4
+isc,sportello,servizi_pagamento,carta di debito,Canone carta di debito,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,carta di credito,Carta di credito,0,0,30.99,30.99,0,30.99
+isc,sportello,servizi_pagamento,carta di credito,invio estratto conto,0,0,13.8,13.8,0,13.8
+isc,sportello,servizi_pagamento,carta prepagata,Carta Prepagata,6,0,0,0,0,0
+isc,sportello,servizi_pagamento,carta prepagata,Ricarica carta pregata,5,0,0,0,0,0
+isc,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,0.7,2.45,3.15,3.85,1.75,3.5
+isc,sportello,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,0,18,18,18,0,0
+isc,sportello,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,0,18,0,0,0,0
+isc,sportello,servizi_pagamento,bonifici,Accredito stipendio/pensione,0,0,0,0,0,0
+isc,sportello,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,7,10.5,14,17.5,10.5,14
+isc,sportello,servizi_pagamento,bonifici,Bonifici vs Italia online,3.5,0.5,2,2.5,0,1
+isc,sportello,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,0,0,0,0,0,0
+isc,sportello,total,total,Totale,58.97,63.42,94.55,102.49,71.3,102.42
+valore,online,base,base,Canone,24,0,0,0,48,24
+valore,online,base,base,Nowbanking Privati,0,0,0,0,0,0
+valore,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,1,1,1,1,1,1
+valore,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,0.16,0.16,0.16,0.16,0.16,0.16
+valore,online,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,1,1,1,1,1,1
+valore,online,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,0,0,0,0,0,0
+valore,online,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,0,0,0,0,0,0
+valore,online,operativita_corrente,gestione della liquidità,Invio estratto conto,0,0,0,0,0,0
+valore,online,servizi_pagamento,carta di debito,Canone carta di debito,0,0,0,0,0,0
+valore,online,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,0,0,0,0,0,0
+valore,online,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,2.1,2.1,2.1,2.1,2.1,2.1
+valore,online,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,2.1,2.1,2.1,2.1,2.1,2.1
+valore,online,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,0,0,0,0,0,0
+valore,online,servizi_pagamento,carta di credito,Carta di credito,30.99,30.99,30.99,30.99,30.99,30.99
+valore,online,servizi_pagamento,carta di credito,invio estratto conto,0,0,0,0,0,0
+valore,online,servizi_pagamento,carta prepagata,Carta Prepagata,6,12,12,12,12,12
+valore,online,servizi_pagamento,carta prepagata,Ricarica carta pregata,0.5,0.5,0.5,0.5,0.5,0.5
+valore,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,0.35,0.35,0.35,0.35,0.35,0.35
+valore,online,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,0,0,0,0,0,0
+valore,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,0,0,0,0,0,0
+valore,online,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,1.5,1.5,1.5,1.5,1.5,1.5
+valore,online,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,1.5,1.5,1.5,1.5,1.5,1.5
+valore,online,servizi_pagamento,bonifici,Accredito stipendio/pensione,0,0,0,0,0,0
+valore,online,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,3.5,3.5,3.5,3.5,3.5,3.5
+valore,online,servizi_pagamento,bonifici,Bonifici vs Italia online,0.5,0.5,0.5,0.5,0.5,0.5
+valore,online,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,0,0,0,0,0,0
+valore,online,total,total,Totale,,,,,,
+numero_operazioni,online,base,base,Canone,1,1,1,1,1,1
+numero_operazioni,online,base,base,Nowbanking Privati,1,1,1,1,1,1
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,0,0,0,0,0,0
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,32,24,26,41,10,25
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,0,0,0,0,0,0
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,7,9,10,10,6,6
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,4,4,4,4,4,4
+numero_operazioni,online,operativita_corrente,gestione della liquidità,Invio estratto conto,4,4,4,4,4,4
+numero_operazioni,online,servizi_pagamento,carta di debito,Canone carta di debito,1,1,1,1,1,1
+numero_operazioni,online,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,38,43,42,44,34,42
+numero_operazioni,online,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,5,4,7,5,2,4
+numero_operazioni,online,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,2,1,2,2,1,1
+numero_operazioni,online,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,36,46,54,52,20,32
+numero_operazioni,online,servizi_pagamento,carta di credito,Carta di credito,0,0,1,1,0,1
+numero_operazioni,online,servizi_pagamento,carta di credito,invio estratto conto,0,0,12,12,0,12
+numero_operazioni,online,servizi_pagamento,carta prepagata,Carta Prepagata,1,0,0,0,0,0
+numero_operazioni,online,servizi_pagamento,carta prepagata,Ricarica carta pregata,5,0,0,0,0,0
+numero_operazioni,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,2,7,9,11,5,10
+numero_operazioni,online,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,6,12,18,24,18,24
+numero_operazioni,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,2,4,2,2,2,2
+numero_operazioni,online,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,0,12,12,12,0,0
+numero_operazioni,online,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,0,12,0,0,0,0
+numero_operazioni,online,servizi_pagamento,bonifici,Accredito stipendio/pensione,6,12,12,12,12,12
+numero_operazioni,online,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,0,0,0,0,0,0
+numero_operazioni,online,servizi_pagamento,bonifici,Bonifici vs Italia online,9,4,8,10,3,6
+numero_operazioni,online,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,4,2,4,6,2,3
+numero_operazioni,online,total,total,Totale,164,201,228,253,124,189
+isc,online,base,base,Canone,24,0,0,0,48,24
+isc,online,base,base,Nowbanking Privati,0,0,0,0,0,0
+isc,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento allo sportello,0,0,0,0,0,0
+isc,online,operativita_corrente,gestione della liquidità,Richiesta elenco movimento online,5.12,3.84,4.16,6.56,1.6,4
+isc,online,operativita_corrente,gestione della liquidità,Prelievo contante sportello > 500 €,0,0,0,0,0,0
+isc,online,operativita_corrente,gestione della liquidità,Versamento in contante e assegni,0,0,0,0,0,0
+isc,online,operativita_corrente,gestione della liquidità,Comunicazione Trasparenza,0,0,0,0,0,0
+isc,online,operativita_corrente,gestione della liquidità,Invio estratto conto,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta di debito,Canone carta di debito,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta di debito,Prelievo presso ATM banca del gruppo,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta di debito,Prelievo presso ATM altra banca,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta di debito,Prelievo presso ATM altri Paesi UE,0,0,0,0,0,0
+isc,online,servizi_pagamento,operazioni pagamento con carta debito,Operazioni,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta di credito,Carta di credito,0,0,30.99,30.99,0,30.99
+isc,online,servizi_pagamento,carta di credito,invio estratto conto,0,0,0,0,0,0
+isc,online,servizi_pagamento,carta prepagata,Carta Prepagata,6,0,0,0,0,0
+isc,online,servizi_pagamento,carta prepagata,Ricarica carta pregata,2.5,0,0,0,0,0
+isc,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti con assegni,0.7,2.45,3.15,3.85,1.75,3.5
+isc,online,servizi_pagamento,"assegni, utenze, imposte",Domiciliazione utenze,0,0,0,0,0,0
+isc,online,servizi_pagamento,"assegni, utenze, imposte",Pagamenti tasse ed imposte,0,0,0,0,0,0
+isc,online,servizi_pagamento,pagamenti ricorrenti,Rata mutuo - addebito in c/c,0,18,18,18,0,0
+isc,online,servizi_pagamento,pagamenti ricorrenti,Finanziamento rate acquisti - addebito in c/c,0,18,0,0,0,0
+isc,online,servizi_pagamento,bonifici,Accredito stipendio/pensione,0,0,0,0,0,0
+isc,online,servizi_pagamento,bonifici,Bonifici vs Italia allo sportello,0,0,0,0,0,0
+isc,online,servizi_pagamento,bonifici,Bonifici vs Italia online,4.5,2,4,5,1.5,3
+isc,online,servizi_pagamento,bonifici,Pagamenti ricevuti tramite bonifico,0,0,0,0,0,0
+isc,online,total,total,Totale,42.82,44.29,60.3,64.4,52.85,65.49
