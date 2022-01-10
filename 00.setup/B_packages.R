@@ -14,19 +14,17 @@ library(waiter)
 
 
 
-
 ### Utilities
 library(data.table)
-library(magrittr)
 library(here)
 library(arrow)
-library(openxlsx)
 
 
 
 ### Visualization
 library(plotly)
 library(reactable)
+library(reactablefmtr)
 
 
 

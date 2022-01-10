@@ -18,7 +18,7 @@ ui_app <-
   navbarPage(
        
        title = div(img(src = "innovationteam_logo.png"), "", style = "float:left; padding-left:10px"),
-       windowTitle = 'PPC - MV Sales Matrix Update',
+       windowTitle = 'Innovation Team Banking Products',
        fluid = TRUE,
        theme = default_th,
        useWaitress(color = '#3EB595'),
@@ -29,7 +29,7 @@ ui_app <-
     
             tabPanel(
                 
-              title = 'Instructions', 
+              title = 'Compare All', 
                      
                 fluidRow(
                     
@@ -37,98 +37,18 @@ ui_app <-
                         
                         width = 12,
                         
-                        main_panel_intro)
+                        fluidRow(
+                          column(4, selectBanca_ui),
+                          column(4, selectGroup_ui),
+                          column(4, selectProduct_ui)
+                        ),
+                        
+                        fluidRow(
+                          column(12, reactableOutput('compare_products'))
+                        ))
                         
                         )
-                ),
-       
-     
-# REGULAR UPDATE ====================================================================  
-        
-        navbarMenu(
-            
-            title = 'ISC',
-            
-
-                             
-        ## Upload Tab ---------------------------------
-        
-           tabPanel(
-                
-              title = 'Explorer', 
-              
-                sidebarLayout(
-      
-                    fluid = FALSE,
-                    
-                    sidebarPanel = sidebar_upload_explorer,
-                    
-                    mainPanel = main_panel_upload_explorer)
-                     
-                ),
-        
-        
-                      "----",
-      
-          
-        ## Analysis Tab ---------------------------
-        
-           tabPanel(
-                
-              title = 'Simulation', 
-              
-              useWaiter(),
-              
-                sidebarLayout(
-      
-                    fluid = FALSE,
-                    
-                    sidebarPanel = sidebar_analysis_ru,
-                    
-                    mainPanel = main_panel_analysis_ru)
-                     
-
-                )),
-  
-    
-    
-        
-    ## Process Tab -------------------------------------------------------
-    
-            tabPanel(
-                
-              title = 'License', 
-                     
-                fluidRow(
-                    
-                    column(
-                        
-                        width = 11, offset = 1,
-                        
-                        main_panel_process)
-                        
-                        )
-              
                 )
-
-
-                tags$style(type = 'text/css', '.navbar { background-color: #262626;
-                           font-family: Arial;
-                           font-size: 13px;
-                           color: #FF0000; }',
-
-                           '.navbar-dropdown { background-color: #262626;
-                           font-family: Arial;
-                           font-size: 13px;
-                           color: #FF0000; }',
-
-                           '.navbar-default .navbar-brand {
-                             color: #cc3f3f;
-                           }'
-
-                           )               
-                   
-
     
 )
 

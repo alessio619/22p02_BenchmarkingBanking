@@ -14,6 +14,6 @@ shinyApp(
     
           )
 
-team
+
 
 
