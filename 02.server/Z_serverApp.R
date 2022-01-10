@@ -4,22 +4,46 @@ server_app <- function(input, output, session) {
     
     # FILTERS COMPARE ---------------------------------------------------
     
-    filter_product = reactive({input$select_product_compare})
-    filter_banca = reactive({input$select_bank_compare})
+    df_compare = reactive({bch_cc_t[, .(banca, cc = cc_names, value = as.numeric(get(input$select_product_compare)))]})
     
     
     ## Functionality 2: by product --------------------------------------
     
+  output$compare_products_plot <- renderPlotly({
+      
+      df_plot = copy(df_compare())
+      df_plot = df_plot[, mean := mean(value, na.rm = TRUE)]
+      df_plot1 = head(df_plot, 5)
+      df_plot2 = tail(df_plot, 5)
+      df_plot = rbind(df_plot1, df_plot2)
+
+      
+      fig <- plot_ly(df_plot, color = I("gray80"), height = '680')
+      fig <- fig %>% add_segments(x = ~mean, xend = ~value, y = ~reorder(cc, value), yend = ~cc, showLegend = FALSE)
+      fig <- fig %>% add_markers(x = ~mean, y = ~reorder(cc, value), name = "mean", color = I("gray60"), showLegend = FALSE, marker = list(size = 10))
+      fig <- fig %>% add_markers(x = ~value, y = ~reorder(cc, value), name = "value", color = '#F29F05',  marker = list(size = 20), showLegend = FALSE)
+      fig <- fig %>% layout(
+                        title = "",
+                        xaxis = list(title = ""),
+                        yaxis = list(title = ""),
+                        margin = list(l = 65))
+      fig
+      
+  })
+      
+  output$compare_products_table <- renderReactable({
     
-  output$compare_products <- renderReactable({
-    
-    bch_product_table_data_2 = bch_cc_t[-c(1:2), .(banca, cc = names, value = as.numeric(get(filter_product())))]
-    
+
+      df = df_compare()
+      
     table_compare <-
+        
       reactable(
-        bch_product_table_data_2,
+        df,
+        
         theme = espn(font_family = "Lato", font_size = 14, header_font_family = 'Lato', cell_padding = 8), highlight = TRUE,
-        showPageSizeOptions = FALSE, pageSizeOptions = c(5, 10, 15, 20, 25), defaultPageSize = 16,
+        showPageSizeOptions = FALSE, pageSizeOptions = c(5, 10, 15, 20, 25), defaultPageSize = 15,
+        
         columns = list(
           banca = colDef(
               name = "",
@@ -30,18 +54,10 @@ server_app <- function(input, output, session) {
             )
           }),
           cc = colDef(name = ""),
-          value = colDef(name = "", cell = icon_assign(bch_product_table_data_2, buckets = 5, fill_color = "#025E73", show_values = "right", number_fmt = scales::dollar))
+          value = colDef(name = "", cell = icon_assign(df, buckets = 5, fill_color = "#025E73", show_values = "right", number_fmt = scales::dollar))
         )
       )
       
-      add_source(
-        table = table_compare,
-        font_family = "roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans",
-        font_size = 16,
-        font_style = "normal",
-        font_weight = "normal",
-        background_color = "#FFFFFF",    
-        margin = 4)
   })
 
   

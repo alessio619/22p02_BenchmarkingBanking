@@ -39,13 +39,17 @@ ui_app <-
                         
                         fluidRow(
                           column(4, selectBanca_ui),
-                          column(4, selectGroup_ui),
+                          column(4, simProduct),
                           column(4, selectProduct_ui)
                         ),
                         
                         fluidRow(
-                          column(6, reactableOutput('compare_products')),
-                          column(6, plotlyOutput('compare_summary'))
+                          column(5, align = "center", 
+                                 h2('Market Products List'),
+                                 reactableOutput('compare_products_table')),
+                          column(7, align = "center", 
+                                 h2('High-Low 5'),
+                                 plotlyOutput('compare_products_plot'))
                         ))
                         
                         )

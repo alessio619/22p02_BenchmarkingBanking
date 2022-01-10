@@ -5,7 +5,7 @@
 library(data.table)
 library(reactable)
 library(reactablefmtr)
-
+library(plotly)
 
 
 # B. DATA ===================================================================================
@@ -54,4 +54,8 @@ reactable(
     )
 )
 
-
+plot_ly(bch_product_table_data_2, 
+        x = ~cc,
+        y = ~value,
+        )
+bch_product_table_data_2
