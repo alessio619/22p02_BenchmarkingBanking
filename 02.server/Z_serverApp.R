@@ -4,7 +4,7 @@ server_app <- function(input, output, session) {
     
     # FILTERS COMPARE ---------------------------------------------------
     
-    df_compare = reactive({bch_cc_t[, .(banca, cc = cc_names, value = as.numeric(get(input$select_product_compare)))]})
+    df_compare = reactive({bch_cc_t[input$select_bank_compare, .(banca, cc = cc_names, value = as.numeric(get(input$select_product_compare)))]})
     
     
     ## Functionality 2: by product --------------------------------------
