@@ -18,7 +18,7 @@ server_app <- function(input, output, session) {
     table_compare <-
       reactable(
         bch_product_table_data_2,
-        theme = espn(font_family = "Roboto", font_size = 14, header_font_family = 'Roboto', cell_padding = 8), highlight = TRUE,
+        theme = espn(font_family = "Lato", font_size = 14, header_font_family = 'Lato', cell_padding = 8), highlight = TRUE,
         showPageSizeOptions = FALSE, pageSizeOptions = c(5, 10, 15, 20, 25), defaultPageSize = 16,
         columns = list(
           banca = colDef(
@@ -30,7 +30,7 @@ server_app <- function(input, output, session) {
             )
           }),
           cc = colDef(name = ""),
-          value = colDef(name = "", cell = icon_assign(bch_product_table_data_2, buckets = 5, show_values = "right", number_fmt = scales::dollar))
+          value = colDef(name = "", cell = icon_assign(bch_product_table_data_2, buckets = 5, fill_color = "#025E73", show_values = "right", number_fmt = scales::dollar))
         )
       )
       
