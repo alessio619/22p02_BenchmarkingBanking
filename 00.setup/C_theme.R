@@ -15,11 +15,11 @@ default_th <-
             success = '#F29F05', #88C0D0
             info = NULL,
             warning = '#F2916D', #81A1C1
-            danger = '#F27405' #BF616A
+            danger = '#F27405', #BF616A
 
- # base_font = font_google("Lato"),
- # heading_font = font_google("Lato"),
- # font_scale = 0.85   
+  base_font = font_google("Lato"),
+  heading_font = font_google("Lato"),
+  font_scale = 0.9   
   
         ) 
 

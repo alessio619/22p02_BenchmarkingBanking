@@ -18,11 +18,10 @@ ui_app <-
   navbarPage(
        
        title = div(img(src = "innovationteam_logo.png"), "", style = "float:left; padding-left:10px"),
-       windowTitle = 'Innovation Team Banking Products',
+       windowTitle = 'Bank Products Benchmark',
        fluid = TRUE,
        theme = default_th,
-       useWaitress(color = '#3EB595'),
-       
+
           
        
     ## Intro Panel -------------------------------------------------------

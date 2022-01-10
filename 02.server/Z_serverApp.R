@@ -4,7 +4,12 @@ server_app <- function(input, output, session) {
     
     # FILTERS COMPARE ---------------------------------------------------
     
-    df_compare = reactive({bch_cc_t[input$select_bank_compare, .(banca, cc = cc_names, value = as.numeric(get(input$select_product_compare)))]})
+    df_compare = reactive({
+      
+      bch_cc_t_1 = bch_cc_t[, .(banca, cc = cc_names, value = as.numeric(get(input$select_product_compare)))]
+      bch_cc_t = bch_cc_t_1[banca %in% c(input$select_bank_compare)]
+      
+      })
     
     
     ## Functionality 2: by product --------------------------------------
@@ -48,9 +53,9 @@ server_app <- function(input, output, session) {
           banca = colDef(
               name = "",
               cell = function(value) {
-            image <- img(src = sprintf("%s.png", value), height = "24px")
+            image <- img(src = sprintf("%s.png", value), height = "20px")
             tagList(
-              div(style = list(display = "inline-block", width = "54px"), image)
+              div(style = list(display = "inline-block", width = "36px"), image)
             )
           }),
           cc = colDef(name = ""),
