@@ -44,7 +44,8 @@ ui_app <-
                         ),
                         
                         fluidRow(
-                          column(12, reactableOutput('compare_products'))
+                          column(6, reactableOutput('compare_products')),
+                          column(6, plotlyOutput('compare_summary'))
                         ))
                         
                         )

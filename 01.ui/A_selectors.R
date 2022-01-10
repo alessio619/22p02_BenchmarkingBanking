@@ -9,15 +9,15 @@ selectBanca_ui <-
     selectInput(inputId = 'select_bank_compare', 
                 label = "Select Bank", 
                 choices = c(
-                    "isp" = "Instesa San Paolo",
-                    "uni" = "Unicredit",
-                    "cag" = "Credit-Agricole",
-                    "bnl" = "BNL",
-                    "bpm" = "BPM",
-                    "mps" = "Monte dei Paschi di Siena",
-                    "ubi" = "UBI",
-                    "bper" = "BPER",
-                    "cdm" = "CREDEM BANCA"),
+                    "Instesa San Paolo" = "isp",
+                    "Unicredit" = 'uni',
+                    "Credit-Agricole" = 'cag',
+                    "BNL" = 'bnl',
+                    "BPM" = 'bpm',
+                    "Monte dei Paschi di Siena" = 'mps',
+                    "UBI" = 'ubi',
+                    "BPER" = 'bper',
+                    "CREDEM BANCA" = 'cdm'),
                 multiple = TRUE
                 )
 
@@ -25,7 +25,7 @@ selectGroup_ui <-
         selectInput(inputId = 'select_group_compare', 
                     label = "Select Group", 
             choices = c(
-                "Canone" = "canone",
+                "canone" = "Canone",
                 "servizi_pagamento" = "Servizi Pagamento",
                 "home_banking" = "Home Banking",
                 "spese_variabili" = "Spese Varaibili",
