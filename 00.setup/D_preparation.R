@@ -9,6 +9,8 @@
 
 ## All -------------------------------------------------------------
 benchmark_cc = fread(path(getwd(), 'yy.data', 'data', 'benchmark_cc_v1.csv'))
+bank_accounts = fread(path(getwd(), 'yy.data', 'legend_accounts.csv'))
+
 cc_names = fread(path(getwd(), 'yy.data', 'cc_names.csv'))
 cc_names[, V2 := NULL]
 colnames(cc_names) <- "cc_names"

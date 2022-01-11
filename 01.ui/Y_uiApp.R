@@ -1,7 +1,5 @@
 
 
-### UI WRAPPER ###     
-
 
 
 
@@ -15,44 +13,18 @@ ui_app <-
     
 # HEADER ================================================================================
 
-  navbarPage(
+dashboardPage(
        
-       title = div(img(src = "innovationteam_logo.png"), "", style = "float:left; padding-left:10px"),
-       windowTitle = 'Bank Products Benchmark',
-       fluid = TRUE,
-       theme = default_th,
-
-          
-       
-    ## Intro Panel -------------------------------------------------------
-    
-            tabPanel(
-                
-              title = 'Compare All', 
-                     
-                fluidRow(
-                    
-                    column(
-                        
-                        width = 12,
-                        
-                        fluidRow(
-                          column(4, selectBanca_ui),
-                          column(4, simProduct),
-                          column(4, selectProduct_ui)
-                        ),
-                        
-                        fluidRow(
-                          column(5, align = "center", 
-                                 h2('Market Products List'),
-                                 reactableOutput('compare_products_table')),
-                          column(7, align = "center", 
-                                 h2('High-Low 5'),
-                                 plotlyOutput('compare_products_plot'))
-                        ))
-                        
-                        )
-                )
+       title = 'Banking Benchmark',
+       fullscreen = TRUE,
+       freshTheme = default_th,
+       header = header_ui,
+       sidebar = sidebar_ui,
+       controlbar = controlbar_ui,
+       footer = footer_ui,
+       body = body_ui,
+       scrollToTop = TRUE
     
 )
+
 

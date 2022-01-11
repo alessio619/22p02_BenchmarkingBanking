@@ -11,6 +11,26 @@ server_app <- function(input, output, session) {
       
       })
     
+    ## Functionality 1: File Viewer -------------------------------------
+    
+    output$fileViewer <- renderUI({
+      
+      bb_acc = bank_accounts[bank == input$select_bank_info] 
+      bb_acc_names = bb_acc$acc
+      
+      updateSelectInput(
+        inputId = 'select_account_info',
+        label = NULL,
+        choices = bb_acc_names,
+        selected = bb_acc_names[1]
+      )
+      
+      src_file = paste0('/fascicoli/', input$select_bank_info, '_', input$select_account_info, '/',  input$select_file_info, '.pdf')
+      
+    tags$iframe(style = 'height:620px; width:100%; scrolling=yes; border:1px solid white;>', 
+                src = as.character(src_file))
+      
+    })
     
     ## Functionality 2: by product --------------------------------------
     
