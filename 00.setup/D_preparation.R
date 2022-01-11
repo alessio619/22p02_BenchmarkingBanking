@@ -9,6 +9,7 @@
 
 ## All -------------------------------------------------------------
 benchmark_cc = fread(path(getwd(), 'yy.data', 'data', 'benchmark_cc_v1.csv'))
+isc_profiles = fread(path(getwd(), 'yy.data', 'data', 'isc_esempio_v1_long.csv'))
 bank_accounts = fread(path(getwd(), 'yy.data', 'legend_accounts.csv'))
 
 cc_names = fread(path(getwd(), 'yy.data', 'cc_names.csv'))

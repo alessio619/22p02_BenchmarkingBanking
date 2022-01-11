@@ -39,9 +39,27 @@ body_ui <- dashboardBody(
                 
                 fluidRow(
                 
-                infoBox(width = 12, elevation = 1, plotlyOutput('profiles_sunburst'))
-                
+                    box(width = 12, elevation = 1,
+                        title = "Update box sidebar",
+                        closable = TRUE,
+                        height = "500px",
+                        solidHeader = FALSE,
+                        collapsible = TRUE,
+                        actionButton("update", "Toggle card sidebar"),
+                        sidebar = boxSidebar(
+                            id = "select_product_isc",
+                            selectInput(
+                                "selector_product_isc_1",
+                                "Select compare ",
+                                choices = data_3_online$voice_type_desc.1,
+                                selected = data_3_online$voice_type_desc.1[1]
+                            )
+                            )
+                        ),
+                        plotlyOutput('profiles_confront')
+                    
                 )
+                
         ),
   
   

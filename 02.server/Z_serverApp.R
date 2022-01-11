@@ -43,30 +43,19 @@ server_app <- function(input, output, session) {
     
     output$profiles_sunburst <- renderPlotly({
       
-      d <- data.frame(
-        ids = c(
-          "North America", "Europe", "Australia", "North America - Football", "Soccer",
-          "North America - Rugby", "Europe - Football", "Rugby",
-          "Europe - American Football","Australia - Football", "Association",
-          "Australian Rules", "Autstralia - American Football", "Australia - Rugby",
-          "Rugby League", "Rugby Union"
-        ),
-        labels = c(
-          "North<br>America", "Europe", "Australia", "Football", "Soccer", "Rugby",
-          "Football", "Rugby", "American<br>Football", "Football", "Association",
-          "Australian<br>Rules", "American<br>Football", "Rugby", "Rugby<br>League",
-          "Rugby<br>Union"
-        ),
-        parents = c(
-          "", "", "", "North America", "North America", "North America", "Europe",
-          "Europe", "Europe","Australia", "Australia - Football", "Australia - Football",
-          "Australia - Football", "Australia - Football", "Australia - Rugby",
-          "Australia - Rugby"
-        ),
-        stringsAsFactors = FALSE
-      )
+      data_1_online <- isc_profiles[var_type == 'valore' & format == 'online']
+      data_2_online <- isc_profiles[var_type == 'valore' & format == 'sportello']
+      data_3_online <- cbind(data_2_online, data_1_online$cost)
       
-      fig <- plot_ly(d, ids = ~ids, labels = ~labels, parents = ~parents, type = 'sunburst')
+      fig <- plot_ly(data_3_online, x = ~V2, y = ~cost, type = 'scatter', mode = 'markers', size = ~cost, color = ~group, colors = 'Paired',
+                     sizes = c(10, 50),
+                     marker = list(opacity = 0.5, sizemode = 'diameter'),
+                     hoverinfo = 'text',
+                     text = ~paste0(voice))
+      fig <- fig %>% layout(title = '',
+                            xaxis = list(showgrid = FALSE),
+                            yaxis = list(showgrid = FALSE),
+                            showlegend = FALSE)
       
       fig
       
