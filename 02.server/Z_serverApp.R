@@ -1,8 +1,9 @@
 
+# Server ---------------------------------------------------------------------------------------------------------------------
 
 server_app <- function(input, output, session) {
     
-    # FILTERS COMPARE ---------------------------------------------------
+    ## FILTERS COMPARE ---------------------------------------------------
     
     df_compare = reactive({
       
@@ -11,7 +12,11 @@ server_app <- function(input, output, session) {
       
       })
     
-    ## Functionality 1: File Viewer -------------------------------------
+    
+    
+    ## BANK INFO ===========================================================================================================================================================
+
+    ### Functionality 1: File Viewer -------------------------------------
     
     output$fileViewer <- renderUI({
       
@@ -32,7 +37,61 @@ server_app <- function(input, output, session) {
       
     })
     
-    ## Functionality 2: by product --------------------------------------
+    
+    
+    ## ISC PROFILES =========================================================================================================================================================
+    
+    output$profiles_sunburst <- renderPlotly({
+      
+      d <- data.frame(
+        ids = c(
+          "North America", "Europe", "Australia", "North America - Football", "Soccer",
+          "North America - Rugby", "Europe - Football", "Rugby",
+          "Europe - American Football","Australia - Football", "Association",
+          "Australian Rules", "Autstralia - American Football", "Australia - Rugby",
+          "Rugby League", "Rugby Union"
+        ),
+        labels = c(
+          "North<br>America", "Europe", "Australia", "Football", "Soccer", "Rugby",
+          "Football", "Rugby", "American<br>Football", "Football", "Association",
+          "Australian<br>Rules", "American<br>Football", "Rugby", "Rugby<br>League",
+          "Rugby<br>Union"
+        ),
+        parents = c(
+          "", "", "", "North America", "North America", "North America", "Europe",
+          "Europe", "Europe","Australia", "Australia - Football", "Australia - Football",
+          "Australia - Football", "Australia - Football", "Australia - Rugby",
+          "Australia - Rugby"
+        ),
+        stringsAsFactors = FALSE
+      )
+      
+      fig <- plot_ly(d, ids = ~ids, labels = ~labels, parents = ~parents, type = 'sunburst')
+      
+      fig
+      
+    })
+    
+    
+    
+    ## MARKET OVERVIEW ======================================================================================================================================================
+    
+    
+    
+    
+    ## POSITIONING SIMULATION ======================================================================================================================================================
+    
+    
+    
+    
+    ## GROUP PRODUCT ======================================================================================================================================================
+    
+    
+    
+    
+    ## PRODUCT COMPARE ======================================================================================================================================================
+    
+    ### Functionality 2: by product --------------------------------------
     
   output$compare_products_plot <- renderPlotly({
       

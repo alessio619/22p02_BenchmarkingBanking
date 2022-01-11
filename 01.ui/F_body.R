@@ -4,10 +4,11 @@
 
 body_ui <- dashboardBody(
     
-    ## Intro Panel -------------------------------------------------------
-    
     tabItems(
-        
+   
+    
+  ## BANK INFO ===========================================================================================================================================================
+                 
         tabItem(tabName = 'banks',
                 
                 fluidRow(
@@ -29,7 +30,24 @@ body_ui <- dashboardBody(
                     )
                 )
             ),
-        
+
+  
+  
+  ## ISC PROFILES =========================================================================================================================================================
+  
+        tabItem(tabName = 'profiles',
+                
+                fluidRow(
+                
+                infoBox(width = 12, elevation = 1, plotlyOutput('profiles_sunburst'))
+                
+                )
+        ),
+  
+  
+  
+  ## MARKET OVERVIEW ======================================================================================================================================================
+  
         tabItem(tabName = 'overview',
             
             infoBox(width = 12, elevation = 1,
@@ -45,30 +63,60 @@ body_ui <- dashboardBody(
                 ))
                 
         ),
-        
-        tabItem(tabName = 'profiles',
+  
+  
+  
+  ## POSITIONING SIMULATION ======================================================================================================================================================
+  
+        tabItem(tabName = 'sim_position',
                 
                 bs4DashGallery()
                 
-        ),
+        ),   
+  
+  
+  
+  ## GROUP PRODUCT ======================================================================================================================================================
+  
+  tabItem(tabName = 'groups',
+          
+          bs4DashGallery()
+          
+  ),   
+  
+  
+  
+  ## PRODUCT COMPARE ======================================================================================================================================================
+  
         tabItem(tabName = 'products',
-    fluidRow(
-        column(12,
-               fluidRow(
-                   box(width = 4, selectBanca_ui),
-                   box(width = 4, simProduct),
-                   box(width = 4, selectProduct_ui)
-               ),
+                
+            fluidRow(
+    
+                infoBox(selectBanca_ui),
+                infoBox(simProduct),
+                infoBox(selectProduct_ui)
+                
+              ),
                
-               fluidRow(
-                   column(5, align = "center", 
+            fluidRow(
+                   box(5, align = "center", 
                           h2('Market Products List'),
                           reactableOutput('compare_products_table')),
-                   column(7, align = "center", 
+                   box(7, align = "center", 
                           h2('High-Low 5'),
                           plotlyOutput('compare_products_plot'))
-               ))
+               )
+            ),
         
+
+
+
+## SIMULATION ======================================================================================================================================================
+
+tabItem(tabName = 'sim_product',
+        
+        bs4DashGallery()
+        
+)
+
     ))
-)
-)
