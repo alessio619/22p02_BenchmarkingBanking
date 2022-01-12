@@ -52,6 +52,28 @@ selectFile_info <-
 
 ## ISC PROFILES ========================
 
+selectVar_profile <- 
+    selectInput(inputId = 'select_var_profile', 
+                label = NULL, 
+                choices = unique(isc_profiles$voice_type_desc),
+                multiple = FALSE,
+                selected = 'total')
+
+
+selectValue_profile <- 
+    selectInput(inputId = 'select_value_profile', 
+                label = NULL, 
+                choices = unique(isc_profiles$var_type),
+                multiple = FALSE,
+                selected = 'isc')
+
+
+selectFormat_profile <- 
+    selectInput(inputId = 'select_format_profile', 
+                label = NULL, 
+                choices = unique(isc_profiles$format),
+                multiple = FALSE,
+                selected = 'online')
 
 
 

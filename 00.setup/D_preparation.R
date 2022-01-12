@@ -12,6 +12,9 @@ benchmark_cc = fread(path(getwd(), 'yy.data', 'data', 'benchmark_cc_v1.csv'))
 isc_profiles = fread(path(getwd(), 'yy.data', 'data', 'isc_esempio_v1_long.csv'))  
 bank_accounts = fread(path(getwd(), 'yy.data', 'legend_accounts.csv'))
 
+isc_profiles[, voice_type_desc.1 := NULL]
+
+
 cc_names = fread(path(getwd(), 'yy.data', 'cc_names.csv'))
 cc_names[, V2 := NULL]
 colnames(cc_names) <- "cc_names"
@@ -30,4 +33,6 @@ bch_cc_t = bch_cc_t[-c(1:2)]
          
 benchmark_cc_items = benchmark_cc[, .(group = type, items = name, item_code = code)]
 
-bch_cc_t
+
+trial = isc_profiles[var_type == 'valore' & format == 'online' & voice_type_desc == 'bonifici' & group == 'giovani']
+

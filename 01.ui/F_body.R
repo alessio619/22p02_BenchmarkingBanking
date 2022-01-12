@@ -41,62 +41,66 @@ body_ui <- dashboardBody(
                 fluidRow(
                 
                     column(width = 12, 
-                           
+                         
+                      fluidRow(
+                        
+                        box(width = 4, icon = shiny::icon("users"), title = 'Select Format', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
+                            selectFormat_profile),
+                        
+                        box(width = 4, icon = shiny::icon("globe"), title = 'Select Group features', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
+                            selectVar_profile),
+
+                        box(width = 4, icon = shiny::icon("cloudsmith"), title = 'Select Value', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
+                            selectValue_profile)
+                        
+                      ),
+                             
+                        fluidRow(
+                          
                            tabBox(
-                             id = 'giovani', width = 12,  elevation = 1, title = "Giovani", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
+                             id = 'famiglie_bassa', width = 4,  elevation = 1, title = "Famiglie Bassa", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                       
-                             tabPanel("giovani", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul")),
+                             tabPanel("Plot", plotlyOutput('radar_fambas')),
+                             tabPanel("Table", reactableOutput('table_fambas'))),
                              
                            tabBox(
-                             id = 'famiglie_bassa', width = 12,  elevation = 1, title = "Famiglie Bassa", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
+                             id = 'famiglie_media', width = 4,  elevation = 1, title = "Famiglie Media", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                              
-                             tabPanel("Famiglie bassa", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul")),
+                             tabPanel("Plot", plotlyOutput('radar_fammed')),
+                             tabPanel("Table", reactableOutput('table_fammed'))),
                            
                            tabBox(
-                             id = 'famiglie_media', width = 12,  elevation = 1, title = "Famiglie Media", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
+                             id = 'famiglie_alta', width = 4,  elevation = 1, title = "Famiglie Alta", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                              
-                             tabPanel("Giovani", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul")),   
+                             tabPanel("Plot", plotlyOutput('radar_famalt')),
+                             tabPanel("Table", reactableOutput('table_famalt'))),   
+                           
+                        ),
+                        
+                        fluidRow(
+                          
+                           tabBox(
+                             id = 'giovani', width = 4,  elevation = 1, title = "Giovani", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'success',
+                             
+                             tabPanel("Plot", plotlyOutput('radar_giovani')),
+                             tabPanel("Table", reactableOutput('table_giovani'))),
                            
                            tabBox(
-                             id = 'famiglie_alta', width = 12,  elevation = 1, title = "Famiglie Alta", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
+                             id = 'pensionati_bassa', width = 4,  elevation = 1, title = "Pensionati Bassa", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'gray',
                              
-                             tabPanel("Giovani", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul")),
+                             tabPanel("Plot", plotlyOutput('radar_penbas')),
+                             tabPanel("Table", reactableOutput('table_penbas'))),
                            
                            tabBox(
-                             id = 'pensionati_bassa', width = 12,  elevation = 1, title = "Pensionati Bassa", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
+                             id = 'pensionati_media', width = 4,  elevation = 1, title = "Pensionati Media", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'gray',
                              
-                             tabPanel("Giovani", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul")),
-                           
-                           tabBox(
-                             id = 'pensionati_media', width = 12,  elevation = 1, title = "Pensionati Media", height = "350px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Giovani",
-                             
-                             tabPanel("Giovani", "A wonderful serenity has taken possession of my entire soul"),
-                             tabPanel("Familia basso", "A wonderful serenity has taken possession of my entire soul"))                           
-                           
-                             
-                      
-                    
+                             tabPanel("Plot", plotlyOutput('radar_penmed')),
+                             tabPanel("Table", reactableOutput('table_penmed'))) 
+                        )
+                        
+                      )
                 )
-                )   
-        ),
         
-        fluidRow(
-          
-          column(width = 12, 
-                 
-                 box(width = 12,  elevation = 1, title = "MATRICE", collapsible = TRUE, height = "500px", solidHeader = TRUE,  type = "tabs", selected = "Giovani",
-                     
-                     'prova'
-)
-                 )
-          
-          )
-  
         ),
   
   ## MARKET OVERVIEW ======================================================================================================================================================
