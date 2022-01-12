@@ -3,31 +3,11 @@
 
 # : =============================================================
 
-## SELECT ---------------------------------------
-
-### BANK ========================
-
-selectBanca_ui <- 
-    selectInput(inputId = 'select_bank_compare', 
-                label = "Select Bank", 
-                choices = c(
-                    "Instesa San Paolo" = "isp",
-                    "Unicredit" = 'uni',
-                    "Credit-Agricole" = 'cag',
-                    "BNL" = 'bnl',
-                    "BPM" = 'bpm',
-                    "Monte dei Paschi di Siena" = 'mps',
-                    "UBI" = 'ubi',
-                    "BPER" = 'bper',
-                    "CREDEM BANCA" = 'cdm'),
-                multiple = TRUE,
-                selected = c('isp', 'uni', 'bper')
-                
-                )
+## BANK INFO ========================
 
 selectBanca_info <- 
     selectInput(inputId = 'select_bank_info', 
-                label = "", 
+                label = NULL, 
                 choices = c(
                     "Instesa San Paolo" = "isp",
                     "Unicredit" = 'uni',
@@ -43,12 +23,53 @@ selectBanca_info <-
     )
 
 
+selectAccount_info <-
+    selectInput(inputId = 'select_account_info', 
+                label = NULL, 
+                choices = c(
+                    "1" = '1',
+                    "2" = '2',
+                    "3" = '3',
+                    "4" = "4"),
+                multiple = FALSE,
+                selected = '1')
 
-### GROUP ======================
+
+selectFile_info <- 
+    selectInput(inputId = 'select_file_info', 
+                label = NULL, 
+                choices = c(
+                    "Conto Corrente" = '1',
+                    "Altro 2" = '2',
+                    "Carta di Credito" = '3',
+                    "Altro 4" = '4'),
+                multiple = FALSE,
+                selected = '1')
+
+
+
+
+
+## ISC PROFILES ========================
+
+
+
+
+## MARKET OVERVIEW ========================
+
+
+
+
+## POSITIONING ========================
+
+
+
+
+## GROUP ======================
 
 selectGroup_ui <- 
         selectInput(inputId = 'select_group_compare', 
-                    label = "Select Group", 
+                    label = NULL, 
             choices = c(
                 "canone" = "Canone",
                 "servizi_pagamento" = "Servizi Pagamento",
@@ -65,38 +86,50 @@ selectGroup_ui <-
 
 
 
-### PRODUCT ====================
+## PRODUCT ====================
+
+selectBanca_ui <- 
+    selectInput(inputId = 'select_bank_compare', 
+                label = NULL, 
+                choices = c(
+                    "Instesa San Paolo" = "isp",
+                    "Unicredit" = 'uni',
+                    "Credit-Agricole" = 'cag',
+                    "BNL" = 'bnl',
+                    "BPM" = 'bpm',
+                    "Monte dei Paschi di Siena" = 'mps',
+                    "UBI" = 'ubi',
+                    "BPER" = 'bper',
+                    "CREDEM BANCA" = 'cdm'),
+                multiple = TRUE,
+                selected = c('isp', 'uni', 'bper')
+                
+    )
+
+
 selectProduct_ui <- 
     selectInput(inputId = 'select_product_compare', 
-                label = "Select Product", 
+                label = NULL, 
                 choices = benchmark_cc_items$item_code,
                 selected = 'cn_1')
 
 
+simProduct_price <- 
+    numericInput(
+        inputId = 'simProductPrice',
+        label = NULL,
+        value = 0,
+        min = NA,
+        max = NA,
+        step = NA,
+        width = '92.5%'
+    )
 
-### FILE =======================
 
-selectAccount_info <-
-    selectInput(inputId = 'select_account_info', 
-                label = "", 
-                choices = c(
-                    "1" = '1',
-                    "2" = '2',
-                    "3" = '3',
-                    "4" = "4"),
-                multiple = FALSE,
-                selected = '1')
 
-selectFile_info <- 
-    selectInput(inputId = 'select_file_info', 
-                label = "", 
-                choices = c(
-                    "Conto Corrente" = '1',
-                    "Altro 2" = '2',
-                    "Carta di Credito" = '3',
-                    "Altro 4" = '4'),
-                multiple = FALSE,
-                selected = '1')
+## SIMULATION =======================
+
+
 
 
 
