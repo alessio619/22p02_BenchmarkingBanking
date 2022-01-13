@@ -9,8 +9,9 @@
 
 ### Shiny  
 library(shiny)
-library(bslib)
-library(waiter)
+library(shinyWidgets)
+library(bs4Dash)
+library(fresh)
 
 
 
