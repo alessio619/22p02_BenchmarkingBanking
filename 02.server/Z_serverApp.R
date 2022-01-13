@@ -232,6 +232,21 @@ server_app <- function(input, output, session) {
     ## 3. MARKET OVERVIEW ======================================================================================================================================================
     
     
+    output$table_benchmark <- renderReactable({
+      
+      benchmark_cc_grouped
+      
+      table_benchmark <-
+        
+        reactable(
+          
+          benchmark_cc_grouped,
+          
+          theme = espn(font_family = "Lato", font_size = 12, header_font_family = 'Lato', cell_padding = 8), highlight = TRUE,
+          showPageSizeOptions = TRUE, pageSizeOptions = c(5, 10, 15, 20, 25), defaultPageSize = 5)
+      
+    })  
+    
     
     
     ## 4. POSITIONING SIMULATION ======================================================================================================================================================

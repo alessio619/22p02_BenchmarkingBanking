@@ -107,16 +107,14 @@ body_ui <- dashboardBody(
   
         tabItem(tabName = 'overview',
             
-            infoBox(width = 12, elevation = 1,
+            fluidRow(
+              
+              infoBox(width = 12, elevation = 1,  color = 'maroon', 
                     
-                carousel(
-                    
-                    id = 'banks_carousel', indicators = TRUE, width = 12,
-                    
-                    carouselItem(tags$img(src = "isp.png", style='height:100px; align="center";')),
-                    carouselItem(tags$img(src = "uni.png", style="height:100px;"))
-                ))
-                
+                      reactableOutput('table_benchmark')
+          
+                )
+            )      
         ),
   
   

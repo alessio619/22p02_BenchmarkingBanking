@@ -33,6 +33,5 @@ bch_cc_t = bch_cc_t[-c(1:2)]
          
 benchmark_cc_items = benchmark_cc[, .(group = type, items = name, item_code = code)]
 
-
-trial = isc_profiles[var_type == 'valore' & format == 'online' & voice_type_desc == 'bonifici' & group == 'giovani']
-
+benchmark_cc_grouped_names = as.data.table(names(benchmark_cc))[-c(1:3)]
+benchmark_cc_grouped = benchmark_cc[, lapply(.SD, mean, na.rm = TRUE), by = .(type), .SDcols = benchmark_cc_grouped_names$V1]
