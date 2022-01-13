@@ -107,11 +107,32 @@ body_ui <- dashboardBody(
   
         tabItem(tabName = 'overview',
             
+          fluidRow(
+              
+              box(width = 4, elevation = 1, icon = shiny::icon("bank"), title = "Select bank", solidHeader = TRUE, status = 'orange', height = '6vh', selectBanca_overview),
+              box(width = 8, elevation = 1, icon = shiny::icon("bank"), title = "Explain", solidHeader = TRUE, status = 'gray', height = '6vh', 'text description')
+          ),    
+  
+             fluidRow(
+              
+              infoBox(width = 6, elevation = 1,  color = 'maroon', 
+                    
+                      plotlyOutput('radar_benchmark')
+          
+                ),
+              
+              infoBox(width = 6, elevation = 1,  color = 'maroon', 
+                    
+                      plotlyOutput('bar_benchmark')
+          
+                ),              
+              ),
+              
             fluidRow(
               
-              infoBox(width = 12, elevation = 1,  color = 'maroon', 
+              infoBox(width = 12, elevation = 1,  color = 'teal',  
                     
-                      reactableOutput('table_benchmark')
+                      plotlyOutput('scatter_matrix_benchmark')
           
                 )
             )      
@@ -123,7 +144,7 @@ body_ui <- dashboardBody(
   
         tabItem(tabName = 'sim_position',
                 
-                bs4DashGallery()
+                 infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
                 
         ),   
   
@@ -133,7 +154,7 @@ body_ui <- dashboardBody(
   
   tabItem(tabName = 'groups',
           
-          bs4DashGallery()
+          infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
           
   ),   
   
@@ -185,7 +206,7 @@ body_ui <- dashboardBody(
 
 tabItem(tabName = 'sim_product',
         
-        bs4DashGallery()
+        infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
         
 )
 

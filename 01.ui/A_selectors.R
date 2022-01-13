@@ -79,6 +79,22 @@ selectFormat_profile <-
 
 ## MARKET OVERVIEW ========================
 
+selectBanca_overview <-
+    selectInput(inputId = 'select_bank_overview', 
+                label = NULL, 
+                choices = c(
+                    "Instesa San Paolo" = "isp",
+                    "Unicredit" = 'uni',
+                    "Credit-Agricole" = 'cag',
+                    "BNL" = 'bnl',
+                    "BPM" = 'bpm',
+                    "Monte dei Paschi di Siena" = 'mps',
+                    "UBI" = 'ubi',
+                    "BPER" = 'bper',
+                    "CREDEM BANCA" = 'cdm'),
+                multiple = FALSE,
+                selected = 'isp'
+    )    
 
 
 
