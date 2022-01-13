@@ -8,14 +8,14 @@ set.seed(313)
 # B. DATA ===================================================================================
 
 ## All -------------------------------------------------------------
-benchmark_cc = fread(path(getwd(), 'yy.data', 'data', 'benchmark_cc_v1.csv')) 
-isc_profiles = fread(path(getwd(), 'yy.data', 'data', 'isc_esempio_v1_long.csv'))  
-bank_accounts = fread(path(getwd(), 'yy.data', 'legend_accounts.csv'))
+benchmark_cc = fread(file.path(getwd(), 'yy.data', 'data', 'benchmark_cc_v1.csv')) 
+isc_profiles = fread(file.path(getwd(), 'yy.data', 'data', 'isc_esempio_v1_long.csv'))  
+bank_accounts = fread(file.path(getwd(), 'yy.data', 'legend_accounts.csv'))
 
 isc_profiles[, voice_type_desc.1 := NULL]
 
 
-cc_names = fread(path(getwd(), 'yy.data', 'cc_names.csv'))
+cc_names = fread(file.path(getwd(), 'yy.data', 'cc_names.csv'))
 cc_names[, V2 := NULL]
 colnames(cc_names) <- "cc_names"
 
