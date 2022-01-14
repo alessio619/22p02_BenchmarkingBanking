@@ -7,8 +7,8 @@ set.seed(313)
 
 credentials <- 
     data.frame(
-        user = c("demo1", "demo2"), # mandatory
-        password = c("innovation", "team"), # mandatory
+        user = c("demo1", "demo2", 'demo3'), # mandatory
+        password = c("innovation", "team", '2022'), # mandatory
         stringsAsFactors = FALSE)
 
 # B. DATA ===================================================================================
