@@ -3,6 +3,14 @@
 # Body ----------------------------------------------------------
 
 body_ui <- dashboardBody(
+  
+  ## User Login ==========================================================================================================================================================
+  
+  shinyauthr::loginUI(
+    "login", 
+    additional_ui = tagList(
+      tags$p("This users are fake and data contained ", class = "text-center")),
+    ),
     
     tabItems(
    

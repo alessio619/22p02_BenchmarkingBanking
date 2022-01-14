@@ -3,7 +3,55 @@
 
 server_app <- function(input, output, session) {
     
-    ## 0. FILTERS COMPARE ---------------------------------------------------
+    ## 0. USER LOGIN MODULE --------------------------------------------------
+  
+  # call login module supplying data frame, 
+  # user and password cols and reactive trigger
+  
+  credentials <- shinyauthr::loginServer(
+    id = "login",
+    data = user_base,
+    user_col = user,
+    pwd_col = password,
+    log_out = reactive(logout_init())
+  )
+  
+  # call the logout module with reactive trigger to hide/show
+  logout_init <- shinyauthr::logoutServer(
+    id = "logout",
+    active = reactive(credentials()$user_auth)
+  )  
+  
+  observe({
+    if (credentials()$user_auth) {
+      shinyjs::removeClass(selector = "body", class = "sidebar-collapse")
+    } else {
+      shinyjs::addClass(selector = "body", class = "sidebar-collapse")
+    }
+  })
+  
+  user_info <- reactive({
+    credentials()$info
+  })
+  
+  user_data <- reactive({
+    req(credentials()$user_auth)
+    
+    if (user_info()$permissions == "admin") {
+      dplyr::starwars[, 1:10]
+    } else if (user_info()$permissions == "standard") {
+      dplyr::storms[, 1:11]
+    }
+  })
+  
+  output$welcome <- renderText({
+    req(credentials()$user_auth)
+    
+    glue("Welcome {user_info()$name}")
+  })
+  
+  
+    ## 00. FILTERS COMPARE ---------------------------------------------------
     
     df_compare = reactive({
       

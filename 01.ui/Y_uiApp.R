@@ -16,6 +16,10 @@ ui_app <-
 dashboardPage(
        
        title = 'Banking Benchmark',
+       tags$li(
+           class = "dropdown",
+           style = "padding: 8px;",
+           shinyauthr::logoutUI("logout")),
        fullscreen = TRUE,
        freshTheme = default_th,
        header = header_ui,
@@ -26,5 +30,6 @@ dashboardPage(
        scrollToTop = TRUE
     
 )
+
 
 
