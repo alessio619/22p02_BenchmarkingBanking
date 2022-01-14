@@ -2,7 +2,23 @@
 
 server_app <- function(input, output, session) {
     
+<<<<<<< Updated upstream
     # FILTERS COMPARE ---------------------------------------------------
+=======
+    ## 0. Authentication ---------------------------------------------------
+  
+  # call the server part
+  # check_credentials returns a function to authenticate users
+  res_auth <- secure_server(
+    check_credentials = check_credentials(credentials)
+  )
+  
+  output$auth_output <- renderPrint({
+    reactiveValuesToList(res_auth)
+  })    
+    
+    ## 0. FILTERS COMPARE ---------------------------------------------------
+>>>>>>> Stashed changes
     
     df_compare = reactive({
       

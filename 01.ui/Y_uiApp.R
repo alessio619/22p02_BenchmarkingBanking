@@ -56,3 +56,7 @@ ui_app <-
     
 )
 
+<<<<<<< Updated upstream
+=======
+ui_app <- secure_app(ui_app, theme = shinythemes::shinytheme("lumen"))
+>>>>>>> Stashed changes
