@@ -3,7 +3,13 @@ set.seed(313)
 
 # : ===========================================================
 
-### 
+## A. Define Credentials -----------------------
+
+credentials <- 
+    data.frame(
+        user = c("demo1", "demo2"), # mandatory
+        password = c("innovation", "team"), # mandatory
+        stringsAsFactors = FALSE)
 
 # B. DATA ===================================================================================
 
