@@ -31,14 +31,7 @@ sidebar_ui <- bs4DashSidebar(
             "ISC Profiles",
             tabName = "profiles",
             icon = shiny::icon("id-badge")
-        ),
-        
-        menuItem(
-            "Overview",
-            tabName = "overview",
-            icon = shiny::icon("chart-bar")
         )
-        
 #        menuItem(
 #            "Positioning",
 #            tabName = "sim_position",
