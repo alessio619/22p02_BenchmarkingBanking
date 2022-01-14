@@ -9,15 +9,10 @@
 
 ### Shiny  
 library(shiny)
-<<<<<<< Updated upstream
-library(bslib)
-library(waiter)
-=======
 library(shinyWidgets)
 library(shinymanager)
 library(bs4Dash)
 library(fresh)
->>>>>>> Stashed changes
 
 
 

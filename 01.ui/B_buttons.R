@@ -2,7 +2,8 @@
 simProduct <- 
     actionButton(
         inputId = 'sim_product',
-        "Simulate Price",
-        icon = icon('simplybuilt'),
-        class = "btn-success"
+        label = "Simulate Price",
+        icon = NULL,
+        class = 'secondary',
+        style = "width: 240%"
     )
