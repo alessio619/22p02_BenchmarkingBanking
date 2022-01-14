@@ -32,4 +32,4 @@ dashboardPage(
 )
 
 
-
+ui_app <- secure_app(ui_app, theme = shinythemes::shinytheme("lumen"))

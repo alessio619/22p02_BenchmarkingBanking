@@ -3,17 +3,13 @@ set.seed(313)
 
 # : ===========================================================
 
-# A. USERS ==================================================================================
+## A. Define Credentials -----------------------
 
-## 1. Local Demo Connection (to modify to a MongoDB or S3 Bucket) -----------------------------------------
-
-# dataframe that holds usernames, passwords and other user data
-user_base <- tibble::tibble(
-    user = c("demo1", "demo2"),
-    password = c("innovation", "team"),
-    permissions = c("admin", "standard"),
-    name = c("User One", "User Two")
-)
+credentials <- 
+    data.frame(
+        user = c("demo1", "demo2"), # mandatory
+        password = c("innovation", "team"), # mandatory
+        stringsAsFactors = FALSE)
 
 # B. DATA ===================================================================================
 

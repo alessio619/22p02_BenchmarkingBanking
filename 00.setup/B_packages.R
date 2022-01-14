@@ -9,6 +9,7 @@
 
 ### Shiny  
 library(shiny)
+library(shinymanager)
 library(shinyWidgets)
 library(bs4Dash)
 library(fresh)

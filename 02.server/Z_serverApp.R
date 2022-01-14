@@ -3,55 +3,19 @@
 
 server_app <- function(input, output, session) {
     
-    ## 0. USER LOGIN MODULE --------------------------------------------------
+    ## 0. Authentication ---------------------------------------------------
   
-  # call login module supplying data frame, 
-  # user and password cols and reactive trigger
-  
-  credentials <- shinyauthr::loginServer(
-    id = "login",
-    data = user_base,
-    user_col = user,
-    pwd_col = password,
-    log_out = reactive(logout_init())
+  # call the server part
+  # check_credentials returns a function to authenticate users
+  res_auth <- secure_server(
+    check_credentials = check_credentials(credentials)
   )
   
-  # call the logout module with reactive trigger to hide/show
-  logout_init <- shinyauthr::logoutServer(
-    id = "logout",
-    active = reactive(credentials()$user_auth)
-  )  
-  
-  observe({
-    if (credentials()$user_auth) {
-      shinyjs::removeClass(selector = "body", class = "sidebar-collapse")
-    } else {
-      shinyjs::addClass(selector = "body", class = "sidebar-collapse")
-    }
+  output$auth_output <- renderPrint({
+    reactiveValuesToList(res_auth)
   })
-  
-  user_info <- reactive({
-    credentials()$info
-  })
-  
-  user_data <- reactive({
-    req(credentials()$user_auth)
     
-    if (user_info()$permissions == "admin") {
-      dplyr::starwars[, 1:10]
-    } else if (user_info()$permissions == "standard") {
-      dplyr::storms[, 1:11]
-    }
-  })
-  
-  output$welcome <- renderText({
-    req(credentials()$user_auth)
-    
-    glue("Welcome {user_info()$name}")
-  })
-  
-  
-    ## 00. FILTERS COMPARE ---------------------------------------------------
+    ## 0. FILTERS COMPARE ---------------------------------------------------
     
     df_compare = reactive({
       
@@ -280,65 +244,20 @@ server_app <- function(input, output, session) {
     ## 3. MARKET OVERVIEW ======================================================================================================================================================
     
     
-     output$radar_benchmark <- renderPlotly({
+    output$table_benchmark <- renderReactable({
       
-      bch_t = transpose(benchmark_cc_grouped, make.names = 'type')
-      bch_t[, cc_names := cc_names$cc_names]
-      bch_t[, banca := na.omit(bch_cc_t_banca$banca)]
-
-      bch_t_plot = bch_t[banca == input$select_bank_overview]
-      bch_t_plot[, banca := NULL]
-      bch_t_plot = melt(bch_t_plot, id.vars = 'cc_names', variable.name = 'type', value.name = 'score')
+      benchmark_cc_grouped
       
+      table_benchmark <-
+        
+        reactable(
+          
+          benchmark_cc_grouped,
+          
+          theme = espn(font_family = "Lato", font_size = 12, header_font_family = 'Lato', cell_padding = 8), highlight = TRUE,
+          showPageSizeOptions = TRUE, pageSizeOptions = c(5, 10, 15, 20, 25), defaultPageSize = 5)
       
-      plot_ly(bch_t_plot, type = 'scatterpolar', r = ~score, theta = ~type, name = ~cc_names, fill = 'toself') %>%
-        layout(polar = list(radialaxis = list(visible = T, range = c(min(bch_t_plot$score), max(bch_t_plot$score))))
-        )
-      
-    })      
- 
-    
-    
-    output$bar_benchmark <- renderPlotly({
-      
-      bch_t = transpose(benchmark_cc_grouped, make.names = 'type')
-      bch_t[, cc_names := cc_names$cc_names]
-      bch_t[, banca := na.omit(bch_cc_t_banca$banca)]
-
-      bch_t_plot = bch_t[banca == input$select_bank_overview]
-      bch_t_plot[, banca := NULL]
-      bch_t_plot = melt(bch_t_plot, id.vars = 'cc_names', variable.name = 'type', value.name = 'score')
-      
-      plot_ly(bch_t_plot, type = 'bar', x = ~cc_names, y = ~score, name = ~type) %>%
-        layout(showLegend = FALSE,
-                        title = "",
-                        xaxis = list(title = ""),
-                        yaxis = list(title = ""),
-                        margin = list(l = 65))
-      
-    })   
-    
-    
-    output$scatter_matrix_benchmark <- renderPlotly({
-      
-      bch_t = transpose(benchmark_cc_grouped, make.names = 'type')
-      bch_t[, cc_names := cc_names$cc_names]
-      bch_t[, banca := na.omit(bch_cc_t_banca$banca)]
-
-      bch_t_plot = melt(bch_t, id.vars = c('banca', 'cc_names'), variable.name = 'type', value.name = 'score')
-      bch_t_plot = bch_t_plot[, (score = mean(score, na.rm = TRUE)), by = c('banca', 'cc_names')]
-      bch_t_plot[, quality := rnorm(22, mean = 5, sd = 3)]
-      
-      plot_ly(bch_t_plot, type = 'scatter', mode = 'markers', x = ~V1, y = ~quality, 
-                          name = ~banca, text = ~cc_names, 
-                             marker = list(size = ~V1, opacity = 0.5)) %>%
-        layout(showLegend = FALSE,
-                        title = "",
-                        xaxis = list(title = ""),
-                        yaxis = list(title = ""),
-                        margin = list(l = 65))
-      
-    })       
+    })  
     
     
     

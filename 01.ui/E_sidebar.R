@@ -7,10 +7,23 @@ sidebar_ui <- bs4DashSidebar(
     ### Info e Fascicoli ===========================
     sidebarMenu(
         div(style="text-align:left;",
+    
+        menuItem(
+            "Product",
+            tabName = "products",
+            selected = TRUE,
+            icon = shiny::icon("align-left")
+            ),
+        
+        menuItem(
+            "Overview",
+            tabName = "overview",
+            icon = shiny::icon("chart-bar")
+        ),        
+        
         menuItem(
             "Banks Info",
             tabName = "banks",
-            selected = TRUE,
             icon = shiny::icon("bank")
         ),
         
@@ -24,31 +37,25 @@ sidebar_ui <- bs4DashSidebar(
             "Overview",
             tabName = "overview",
             icon = shiny::icon("chart-bar")
-        ),
-        
-        menuItem(
-            "Positioning",
-            tabName = "sim_position",
-            icon = shiny::icon("bolt")
-        ),
-        
-        menuItem(
-            "Groups",
-            tabName = "groups",
-            icon = shiny::icon("chart-pie")
-        ),
-        
-        menuItem(
-            "Product",
-            tabName = "products",
-            icon = shiny::icon("align-left")
-        ),
-        
-        menuItem(
-            "Simulation",
-            tabName = "sim_product",
-            icon = shiny::icon("caret-right")
         )
+        
+#        menuItem(
+#            "Positioning",
+#            tabName = "sim_position",
+#            icon = shiny::icon("bolt")
+#        ),
+        
+#        menuItem(
+#            "Groups",
+#            tabName = "groups",
+#            icon = shiny::icon("chart-pie")
+#        ),
+
+#        menuItem(
+#            "Simulation",
+#            tabName = "sim_product",
+#            icon = shiny::icon("caret-right")
+#        )
         
         
     )),

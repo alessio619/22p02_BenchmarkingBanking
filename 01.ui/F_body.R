@@ -3,17 +3,64 @@
 # Body ----------------------------------------------------------
 
 body_ui <- dashboardBody(
-  
-  ## User Login ==========================================================================================================================================================
-  
-  shinyauthr::loginUI(
-    "login", 
-    additional_ui = tagList(
-      tags$p("This users are fake and data contained ", class = "text-center")),
-    ),
     
     tabItems(
-   
+
+      
+ ## PRODUCT COMPARE ======================================================================================================================================================
+      
+      tabItem(tabName = 'products',
+              
+              fluidRow(
+                
+                box(width = 4, icon = shiny::icon("bank"), title = 'Select Bank', color = 'success', background = 'success', gradient = TRUE, fill = TRUE, height = '8vh',
+                    selectBanca_ui),
+                box(width = 4, icon = shiny::icon("hand-pointer"), title = 'Select Feature', color = 'success', background = 'success', gradient = TRUE, fill = TRUE, height = '8vh',
+                    selectProduct_ui),
+                box(width = 4, icon = shiny::icon("run"), title = 'Simulate Feature Price', color = 'maroon', background = 'maroon', gradient = TRUE, fill = TRUE, height = '8vh',
+                    div(simProduct_price, style = "display:inline-block"), 
+                    div(simProduct, style = "display:inline-block"))
+                
+              ),
+              
+              fluidRow(
+                
+                column(width = 5, 
+                       
+                       box(width = 12, maximizable = TRUE, height = '52vh', title = 'Market Products List', solidHeader = TRUE, status = 'gray',
+                           reactableOutput('compare_products_table')),
+                       
+                       fluidRow(     
+                         valueBoxOutput("product_mean_market_value"),
+                         valueBoxOutput("product_mean_selected_value"),
+                         valueBoxOutput("product_value_simulated_value"))
+                ),
+                
+                column(width = 7,
+                       
+                       box(width = 12, maximizable = TRUE, height = '64vh', title = 'Highest - Lowest 5 Products', solidHeader = TRUE, status = 'gray', footer = 'From Selected banks, 5 highest and 5 lowest feature price and distance from the market mean.',
+                           plotlyOutput('compare_products_plot', height = "63vh"))  
+                       
+                )
+                
+              )
+      ),
+ 
+ 
+ ## MARKET OVERVIEW ======================================================================================================================================================
+ 
+        tabItem(tabName = 'overview',
+         
+          fluidRow(
+           
+            infoBox(width = 12, elevation = 1,  color = 'maroon', 
+                   
+                   reactableOutput('table_benchmark')
+                   
+           )
+         )      
+ ),
+         
     
   ## BANK INFO ===========================================================================================================================================================
                  
@@ -109,113 +156,40 @@ body_ui <- dashboardBody(
                       )
                 )
         
-        ),
+        )
   
-  ## MARKET OVERVIEW ======================================================================================================================================================
-  
-        tabItem(tabName = 'overview',
-            
-          fluidRow(
-              
-              box(width = 4, elevation = 1, icon = shiny::icon("bank"), title = "Select bank", solidHeader = TRUE, status = 'orange', height = '6vh', selectBanca_overview),
-              box(width = 8, elevation = 1, icon = shiny::icon("bank"), title = "Explain", solidHeader = TRUE, status = 'gray', height = '6vh', 'text description')
-          ),    
-  
-             fluidRow(
-              
-              infoBox(width = 6, elevation = 1,  color = 'maroon', 
-                    
-                      plotlyOutput('radar_benchmark')
-          
-                ),
-              
-              infoBox(width = 6, elevation = 1,  color = 'maroon', 
-                    
-                      plotlyOutput('bar_benchmark')
-          
-                ),              
-              ),
-              
-            fluidRow(
-              
-              infoBox(width = 12, elevation = 1,  color = 'teal',  
-                    
-                      plotlyOutput('scatter_matrix_benchmark')
-          
-                )
-            )      
-        ),
-  
-  
-  
+
   ## POSITIONING SIMULATION ======================================================================================================================================================
   
-        tabItem(tabName = 'sim_position',
-                
-                 infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
-                
-        ),   
+#        tabItem(tabName = 'sim_position',
+#                
+#                bs4DashGallery()
+#                
+#        ),   
   
   
   
   ## GROUP PRODUCT ======================================================================================================================================================
   
-  tabItem(tabName = 'groups',
-          
-          infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
-          
-  ),   
+#  tabItem(tabName = 'groups',
+#          
+#          bs4DashGallery()
+#          
+#  ),   
   
   
   
-  ## PRODUCT COMPARE ======================================================================================================================================================
-  
-        tabItem(tabName = 'products',
-                
-            fluidRow(
-    
-                box(width = 4, icon = shiny::icon("bank"), title = 'Select Bank', color = 'success', background = 'success', gradient = TRUE, fill = TRUE, height = '8vh',
-                    selectBanca_ui),
-                box(width = 4, icon = shiny::icon("hand-pointer"), title = 'Select Feature', color = 'success', background = 'success', gradient = TRUE, fill = TRUE, height = '8vh',
-                    selectProduct_ui),
-                box(width = 4, icon = shiny::icon("run"), title = 'Simulate Feature Price', color = 'maroon', background = 'maroon', gradient = TRUE, fill = TRUE, height = '8vh',
-                    div(simProduct_price, style = "display:inline-block"), 
-                    div(simProduct, style = "display:inline-block"))
-                
-              ),
-               
-            fluidRow(
-              
-              column(width = 5, 
-                
-                 box(width = 12, maximizable = TRUE, height = '52vh', title = 'Market Products List', solidHeader = TRUE, status = 'gray',
-                     reactableOutput('compare_products_table')),
-               
-                fluidRow(     
-                  valueBoxOutput("product_mean_market_value"),
-                  valueBoxOutput("product_mean_selected_value"),
-                  valueBoxOutput("product_value_simulated_value"))
-              ),
-    
-              column(width = 7,
-                     
-                     box(width = 12, maximizable = TRUE, height = '64vh', title = 'Highest - Lowest 5 Products', solidHeader = TRUE, status = 'gray', footer = 'From Selected banks, 5 highest and 5 lowest feature price and distance from the market mean.',
-                         plotlyOutput('compare_products_plot', height = "63vh"))  
-                     
-                     )
 
-               )
-            ),
         
 
 
 
 ## SIMULATION ======================================================================================================================================================
 
-tabItem(tabName = 'sim_product',
-        
-        infoBox(width = 12, elevation = 1,  color = 'maroon', 'WORK IN PROGRESS')
-        
-)
+#tabItem(tabName = 'sim_product',
+#        
+#        bs4DashGallery()
+#        
+#)
 
     ))
