@@ -39,7 +39,7 @@ body_ui <- dashboardBody(
                 column(width = 7,
                        
                        box(width = 12, maximizable = TRUE, height = '64vh', title = 'Highest - Lowest 5 Products', solidHeader = TRUE, status = 'gray', footer = 'From Selected banks, 5 highest and 5 lowest feature price and distance from the market mean.',
-                           plotlyOutput('compare_products_plot', height = "63vh"))  
+                           plotlyOutput('compare_products_plot', height = "62vh"))  
                        
                 )
                 
@@ -119,14 +119,11 @@ body_ui <- dashboardBody(
                     column(width = 12, 
                          
                       fluidRow(
-                        
-                        box(width = 4, icon = shiny::icon("users"), title = 'Select Format', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
-                            selectFormat_profile),
-                        
-                        box(width = 4, icon = shiny::icon("globe"), title = 'Select Group features', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
+
+                        box(width = 6, icon = shiny::icon("globe"), title = 'Select Group features', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
                             selectVar_profile),
 
-                        box(width = 4, icon = shiny::icon("cloudsmith"), title = 'Select Value', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
+                        box(width = 6, icon = shiny::icon("cloudsmith"), title = 'Select Value', color = 'success', background = 'warning', gradient = TRUE, fill = TRUE, height = '8vh',
                             selectValue_profile)
                         
                       ),
@@ -136,19 +133,19 @@ body_ui <- dashboardBody(
                            tabBox(
                              id = 'famiglie_bassa', width = 4,  elevation = 1, title = "Famiglie Bassa", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                       
-                             tabPanel("Plot", plotlyOutput('radar_fambas')),
+                             tabPanel("Plot", plotlyOutput('radar_fambas', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_fambas'))),
                              
                            tabBox(
                              id = 'famiglie_media', width = 4,  elevation = 1, title = "Famiglie Media", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                              
-                             tabPanel("Plot", plotlyOutput('radar_fammed')),
+                             tabPanel("Plot", plotlyOutput('radar_fammed', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_fammed'))),
                            
                            tabBox(
                              id = 'famiglie_alta', width = 4,  elevation = 1, title = "Famiglie Alta", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'lightblue',
                              
-                             tabPanel("Plot", plotlyOutput('radar_famalt')),
+                             tabPanel("Plot", plotlyOutput('radar_famalt', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_famalt'))),   
                            
                         ),
@@ -158,19 +155,19 @@ body_ui <- dashboardBody(
                            tabBox(
                              id = 'giovani', width = 4,  elevation = 1, title = "Giovani", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'success',
                              
-                             tabPanel("Plot", plotlyOutput('radar_giovani')),
+                             tabPanel("Plot", plotlyOutput('radar_giovani', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_giovani'))),
                            
                            tabBox(
                              id = 'pensionati_bassa', width = 4,  elevation = 1, title = "Pensionati Bassa", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'gray',
                              
-                             tabPanel("Plot", plotlyOutput('radar_penbas')),
+                             tabPanel("Plot", plotlyOutput('radar_penbas', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_penbas'))),
                            
                            tabBox(
                              id = 'pensionati_media', width = 4,  elevation = 1, title = "Pensionati Media", height = "345px", collapsible = TRUE, solidHeader = TRUE,  type = "tabs", selected = "Table", side = "right", status = 'gray',
                              
-                             tabPanel("Plot", plotlyOutput('radar_penmed')),
+                             tabPanel("Plot", plotlyOutput('radar_penmed', height = '30vh')),
                              tabPanel("Table", reactableOutput('table_penmed'))) 
                         )
                         

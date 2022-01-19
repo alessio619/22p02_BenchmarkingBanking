@@ -68,12 +68,6 @@ selectValue_profile <-
                 selected = 'isc')
 
 
-selectFormat_profile <- 
-    selectInput(inputId = 'select_format_profile', 
-                label = NULL, 
-                choices = unique(isc_profiles$format),
-                multiple = FALSE,
-                selected = 'online')
 
 
 

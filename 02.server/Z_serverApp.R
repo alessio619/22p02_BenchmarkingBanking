@@ -15,7 +15,7 @@ server_app <- function(input, output, session) {
     reactiveValuesToList(res_auth)
   })
     
-    ## 0. FILTERS COMPARE ---------------------------------------------------
+    ## 0. Filters Compare ---------------------------------------------------
     
     df_compare = reactive({
       
@@ -30,7 +30,7 @@ server_app <- function(input, output, session) {
     
     
     
-    ## 1. BANK INFO ===========================================================================================================================================================
+    ## 1. Bank Info ===========================================================================================================================================================
 
     ### Functionality 1: File Viewer -------------------------------------
     
@@ -55,78 +55,96 @@ server_app <- function(input, output, session) {
     
     
     
-    ## 2. ISC PROFILES =========================================================================================================================================================
+    ## 2. ISC Profiles =========================================================================================================================================================
     
     ### Radar Charts -----------------------------------
     
     output$radar_fambas <- renderPlotly({
       
-      t_fambas2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_fambas2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_fambas2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-          polar = list(radialaxis = list(visible = T, range = c(min(t_fambas2$cost), max(t_fambas2$cost))))
-        )
+      plot_ly(t_fambas2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+        
       
     })
     
 
     output$radar_fammed <- renderPlotly({
       
-      t_fammed2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_fammed2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_fammed2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-               polar = list(radialaxis = list(visible = T, range = c(min(t_fammed2$cost), max(t_fammed2$cost))))
-        )
+      plot_ly(t_fammed2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+
       
     })
     
     
     output$radar_famalt <- renderPlotly({
       
-      t_famalt2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_famalt2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_famalt2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-               polar = list(radialaxis = list(visible = T, range = c(min(t_famalt2$cost), max(t_famalt2$cost))))
-        )
+      plot_ly(t_famalt2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+
       
     })
     
     
     output$radar_giovani <- renderPlotly({
       
-      t_giovani2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_giovani2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_giovani2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-               polar = list(radialaxis = list(visible = T, range = c(min(t_giovani2$cost), max(t_giovani2$cost))))
-        )
+      plot_ly(t_giovani2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+
       
     })
     
     
     output$radar_penmed <- renderPlotly({
       
-      t_penmed2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_penmed2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_penmed2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-               polar = list(radialaxis = list(visible = T, range = c(min(t_penmed2$cost), max(t_penmed2$cost))))
-        )
+      plot_ly(t_penmed2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+
       
     })
     
     
     output$radar_penbas <- renderPlotly({
       
-      t_penbas2 = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_penbas2 = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       
-      plot_ly(t_penbas2, type = 'scatterpolar', r = ~cost, theta = ~voice, fill = 'toself') %>%
-        layout(showlegend = F,
-               polar = list(radialaxis = list(visible = T, range = c(min(t_penbas2$cost), max(t_penbas2$cost))))
-        )
+      plot_ly(t_penbas2, type = 'bar', x = ~voice, y = ~cost, name = ~format) %>%
+        layout(showLegend = FALSE,
+               title = "",
+               xaxis = list(title = ""),
+               yaxis = list(title = ""),
+               margin = list(l = 65))
+
       
     })        
     
@@ -136,7 +154,7 @@ server_app <- function(input, output, session) {
   
     output$table_fambas <- renderReactable({
       
-      t_fambas = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
+      t_fambas = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_bassa']
       t_fambas[, group := NULL]
       t_fambas[, var_type := NULL]
       
@@ -153,7 +171,7 @@ server_app <- function(input, output, session) {
     
     output$table_fammed <- renderReactable({
       
-      t_fammed = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_media']
+      t_fammed = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_media']
       t_fammed[, group := NULL]
       t_fammed[, var_type := NULL]
       
@@ -170,7 +188,7 @@ server_app <- function(input, output, session) {
     
     output$table_famalt <- renderReactable({
       
-      t_famalt = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_alta']
+      t_famalt = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'famiglie_alta']
       t_famalt[, group := NULL]
       t_famalt[, var_type := NULL]
       
@@ -188,7 +206,7 @@ server_app <- function(input, output, session) {
     
     output$table_giovani <- renderReactable({
       
-      t_giovani = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'giovani']
+      t_giovani = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'giovani']
       t_giovani[, group := NULL]
       t_giovani[, var_type := NULL]
       
@@ -205,7 +223,7 @@ server_app <- function(input, output, session) {
     
     output$table_penbas <- renderReactable({
       
-      t_penbas = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'pensionati_bassa']
+      t_penbas = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'pensionati_bassa']
       t_penbas[, group := NULL]
       t_penbas[, var_type := NULL]
       
@@ -222,7 +240,7 @@ server_app <- function(input, output, session) {
     
     output$table_penmed <- renderReactable({
       
-      t_penmed = isc_profiles[var_type == input$select_value_profile & format == input$select_format_profile & voice_type_desc == input$select_var_profile & group == 'pensionati_media']
+      t_penmed = isc_profiles[var_type == input$select_value_profile & voice_type_desc == input$select_var_profile & group == 'pensionati_media']
       t_penmed[, group := NULL]
       t_penmed[, var_type := NULL]
       
@@ -302,17 +320,17 @@ server_app <- function(input, output, session) {
     })       
     
     
-    ## 4. POSITIONING SIMULATION ======================================================================================================================================================
+    ## 4. Positioning Sim ======================================================================================================================================================
     
     
     
     
-    ## 5. GROUP PRODUCT ======================================================================================================================================================
+    ## 5. Group Product ======================================================================================================================================================
     
     
     
     
-    ## 6. PRODUCT COMPARE ======================================================================================================================================================
+    ## 6. Product Compare ======================================================================================================================================================
     
     ### Plot High-Low 5 --------------------------------------
     
@@ -331,7 +349,7 @@ server_app <- function(input, output, session) {
       fig <- fig %>% add_markers(x = ~value, y = ~reorder(cc, value), name = "value", color = ~banca,  marker = list(size = 30), showLegend = FALSE)
       fig <- fig %>% layout(showLegend = FALSE,
                         title = "",
-                        xaxis = list(title = ""),
+                        xaxis = list(title = "euro $"),
                         yaxis = list(title = ""),
                         margin = list(l = 65))
       fig

@@ -5,5 +5,7 @@ simProduct <-
         label = "Simulate Price",
         icon = NULL,
         class = 'secondary',
-        style = "width: 240%"
+        style = "width: 225%"
     )
+
+
