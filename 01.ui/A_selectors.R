@@ -3,7 +3,7 @@
 
 # : =============================================================
 
-## BANK INFO ========================
+## Bank Info ========================
 
 selectBanca_info <- 
     selectInput(inputId = 'select_bank_info', 
@@ -50,7 +50,7 @@ selectFile_info <-
 
 
 
-## ISC PROFILES ========================
+## ISC Profiles ========================
 
 selectVar_profile <- 
     selectInput(inputId = 'select_var_profile', 
@@ -71,7 +71,7 @@ selectValue_profile <-
 
 
 
-## MARKET OVERVIEW ========================
+## Market Overview ========================
 
 selectBanca_overview <-
     selectInput(inputId = 'select_bank_overview', 
@@ -92,12 +92,12 @@ selectBanca_overview <-
 
 
 
-## POSITIONING ========================
+## Positioning ========================
 
 
 
 
-## GROUP ======================
+## Group ======================
 
 selectGroup_ui <- 
         selectInput(inputId = 'select_group_compare', 
@@ -118,7 +118,7 @@ selectGroup_ui <-
 
 
 
-## PRODUCT ====================
+## Product ====================
 
 selectBanca_ui <- 
     selectInput(inputId = 'select_bank_compare', 
@@ -159,7 +159,7 @@ simProduct_price <-
 
 
 
-## SIMULATION =======================
+## Sim =======================
 
 
 
